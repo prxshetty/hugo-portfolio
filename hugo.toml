@@ -11,14 +11,14 @@ theme = 'prxshetty-minimalistic'
 [params]
 name = "Pranam Shetty"
 location = "Rochester, NY"
-description = "Currently focused on Agentic Frameworks, computer use and building LLM based applications while studying for my Masters in Data Science RIT. Avid Reader. Technical Blogger. Insane about AI."
-
+description = "Currently focused on Agentic Frameworks, computer use and building LLM based applications. Insane about AI."
+discord = "prxshetty"
 github = "https://github.com/prxshetty"
 email = "prxshetty@gmail.com"
 twitter = "https://www.twitter.com/prxshetty"
 medium = "https://www.medium.com/@prxshetty"
 linkedin = "https://www.linkedin.com/in/prxshetty"
-instagram = "https://instagram.com/yourusername"
+instagram = "https://instagram.com/prxshetty"
 
 [[params.technologies]]
 name = "CSS"
@@ -78,16 +78,16 @@ company = "Knowledge Solutions India"
     url = "/about"
     weight = 1
   [[menu.main]]
-    name = "My work"
-    url = "/work"
+    name = "Experience"
+    url = "/Experience"
     weight = 2
   [[menu.main]]
     name = "Projects"
     url = "/projects"
     weight = 3
   [[menu.main]]
-    name = "Posts"
-    url = "/posts"
+    name = "Blogs"
+    url = "/blogs"
     weight = 4
   [[menu.main]]
     name = "Contact Me"
