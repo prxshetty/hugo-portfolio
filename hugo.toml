@@ -20,36 +20,6 @@ medium = "https://www.medium.com/@prxshetty"
 linkedin = "https://www.linkedin.com/in/prxshetty"
 instagram = "https://instagram.com/prxshetty"
 
-[[params.technologies]]
-name = "CSS"
-icon = "css.svg"
-[[params.technologies]]
-name = "JavaScript"
-icon = "javascript.svg"
-[[params.technologies]]
-name = "TypeScript"
-icon = "typescript.svg"
-[[params.technologies]]
-name = "Hugo"
-icon = "hugo.svg"
-[[params.technologies]]
-name = "React"
-icon = "react.svg"
-[[params.technologies]]
-name = "Next.js"
-icon = "nextjs.svg"
-[[params.technologies]]
-name = "Node.js"
-icon = "nodejs.svg"
-[[params.technologies]]
-name = "Git"
-icon = "git.svg"
-[[params.technologies]]
-name = "Java"
-icon = "java.svg"
-[[params.technologies]]
-name = "Spring"
-icon = "spring.svg"
 
 [[params.experience]]
 company = "Marva.ai"
