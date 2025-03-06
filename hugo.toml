@@ -1,3 +1,95 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Pranam Shetty'
+theme = 'prxshetty-minimalistic'
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+name = "Pranam Shetty"
+location = "Rochester, NY"
+description = "Currently focused on Agentic Frameworks, computer use and building LLM based applications while studying for my Masters in Data Science RIT. Avid Reader. Technical Blogger. Insane about AI."
+
+github = "https://github.com/prxshetty"
+email = "prxshetty@gmail.com"
+twitter = "https://www.twitter.com/prxshetty"
+medium = "https://www.medium.com/@prxshetty"
+linkedin = "https://www.linkedin.com/in/prxshetty"
+instagram = "https://instagram.com/yourusername"
+
+[[params.technologies]]
+name = "CSS"
+icon = "css.svg"
+[[params.technologies]]
+name = "JavaScript"
+icon = "javascript.svg"
+[[params.technologies]]
+name = "TypeScript"
+icon = "typescript.svg"
+[[params.technologies]]
+name = "Hugo"
+icon = "hugo.svg"
+[[params.technologies]]
+name = "React"
+icon = "react.svg"
+[[params.technologies]]
+name = "Next.js"
+icon = "nextjs.svg"
+[[params.technologies]]
+name = "Node.js"
+icon = "nodejs.svg"
+[[params.technologies]]
+name = "Git"
+icon = "git.svg"
+[[params.technologies]]
+name = "Java"
+icon = "java.svg"
+[[params.technologies]]
+name = "Spring"
+icon = "spring.svg"
+
+[[params.experience]]
+company = "Marva.ai"
+    role = "ML Engineer Intern"
+    period = "June, 2023 -August, 2023"
+    description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
+
+[[params.experience]]
+company = "Knowledge Solutions India"
+    role = "ML Research Intern"
+    period = "September, 2021 - November, 2021"
+    description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
+
+[[params.experience]]
+    company = "Laugh Out Loud Ventures"
+    role = "SEO Sales Intern"
+    period = "Feb, 2020 - March, 2020"
+    description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
+
+
+
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "My work"
+    url = "/work"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts"
+    weight = 4
+  [[menu.main]]
+    name = "Contact Me"
+    url = "/contact"
+    weight = 5
