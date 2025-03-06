@@ -1,11 +1,11 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 py-12">
+<div class="w-1/2 mx-auto py-12">
     <!-- Hero Section -->
-    <section class="mb-20">
-        <div class="max-w-3xl mx-auto p-8 border border-gray-600 rounded-lg bg-[#121212] shadow-lg relative">
-            <div class="absolute -top-4 right-4 flex space-x-2">
+    <section class="mb-16">
+        <div class="max-w-3xl mx-auto p-6 border border-gray-600 rounded-lg bg-[#121212] shadow-lg relative">
+            <div class="absolute top-4 right-4 flex space-x-2">
                 {{ with .Site.Params.email }}
-                <a href="mailto:{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-full border border-white">
+                <a href="mailto:{{ . }}" class="text-gray-4 00 hover:text-white bg-[#121212] p-2 rounded-md border border-white">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                 </a>
                 {{ end }}
@@ -45,53 +45,65 @@
 
     <!-- tech stack here -->
     <section class="mb-20">
-        <h2 class="text-3xl font-bold mb-8 text-center">What I work with</h2>
+        <h2 class="text-3xl font-bold mb-8 relative">What I work with</h2>
         <div class="tech-carousel relative overflow-hidden">
-            <div class="tech-track flex animate-scroll">
-                <!-- set 1 -->
-                <div class="tech-slide flex space-x-8 mx-4">
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-8 h-8 tech-icon">
-                        <span>Python</span>
+            <div class="tech-track flex flex-col gap-8 animate-carousel">
+                <!-- Row 1 -->
+                <div class="flex gap-6 justify-start items-center">
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-8 h-8 tech-icon">
+                        <span>HTML5</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-8 h-8 tech-icon">
-                        <span>TypeScript</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-8 h-8 tech-icon">
+                        <span>CSS3</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8 tech-icon">
                         <span>JavaScript</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8 tech-icon">
-                        <span>React</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hugo/hugo-original.svg" alt="Hugo" class="w-8 h-8 tech-icon">
+                        <span>Hugo</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-8 h-8 tech-icon">
-                        <span>Docker</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-8 h-8 tech-icon">
+                        <span>Next.js</span>
+                    </div>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-8 h-8 tech-icon">
+                        <span>Git</span>
+                    </div>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-8 h-8 tech-icon">
+                        <span>Java</span>
                     </div>
                 </div>
-                <!-- set 2-->
-                <div class="tech-slide flex space-x-8 mx-4">
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-8 h-8 tech-icon">
-                        <span>Python</span>
+                <!-- Row 2 -->
+                <div class="flex gap-6 justify-start items-center">
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-8 h-8 tech-icon">
+                        <span>PostgreSQL</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-8 h-8 tech-icon">
-                        <span>TypeScript</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" class="w-8 h-8 tech-icon">
+                        <span>Redis</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8 tech-icon">
-                        <span>JavaScript</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-8 h-8 tech-icon">
+                        <span>MongoDB</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8 tech-icon">
-                        <span>React</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" class="w-8 h-8 tech-icon">
+                        <span>SQLite</span>
                     </div>
-                    <div class="flex items-center space-x-2 min-w-max">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-8 h-8 tech-icon">
-                        <span>Docker</span>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://cdn.jsdelivr.net/gh/supabase/supabase/packages/common/assets/images/supabase-logo.svg" alt="Supabase" class="w-8 h-8 tech-icon">
+                        <span>Supabase</span>
+                    </div>
+                    <div class="flex items-center space-x-2 min-w-max p-3 hover:bg-gray-800 rounded-lg transition-colors">
+                        <img src="https://www.pinecone.io/images/favicon.svg" alt="Pinecone" class="w-8 h-8 tech-icon">
+                        <span>Pinecone</span>
                     </div>
                 </div>
             </div>
@@ -99,10 +111,11 @@
     </section>
 
     <section>
-        <h2 class="text-3xl font-bold mb-8 text-center">Experience</h2>
+        <h2 class="text-4xl font-bold mb-8">Experience</h2>
         <div class="space-y-8 max-w-3xl mx-auto">
             {{ range .Site.Params.experience }}
-            <div class="relative pl-8 border-l-2 border-gray-700">
+            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-2 before:h-full before:bg-gradient-to-b before:from-blue-500 before:to-purple-500 before:rounded-full">
+                <div class="absolute -left-2 top-0 w-6 h-6 bg-[#121212] border-2 border-blue-500 rounded-full"></div>
                 <h3 class="text-xl font-semibold">{{ .company }}</h3>
                 <p class="text-gray-400">{{ .role }}</p>
                 <p class="text-gray-400 text-sm">{{ .period }}</p>
@@ -112,4 +125,27 @@
         </div>
     </section>
 </div>
+
+<style>
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-carousel {
+    animation: carousel 30s linear infinite;
+}
+
+.tech-carousel {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.tech-track:hover {
+    animation-play-state: paused;
+}
+</style>
 {{ end }} 
