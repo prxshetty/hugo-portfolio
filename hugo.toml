@@ -23,24 +23,44 @@ instagram = "https://instagram.com/prxshetty"
 
 [[params.experience]]
 company = "Marva.ai"
-    role = "ML Engineer Intern"
-    period = "June 2023 - August 2023"
-    description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
+role = "ML Engineer Intern"
+period = "June 2023 - Aug 2023"
+logo = "/images/company/marva-ai.png"
+description = "Developed deep learning models for financial stock prediction and real-time data visualization."
+responsibilities = [
+    "Developed financial stock prediction models integrating advanced deep learning techniques",
+    "Enhanced buy/sell signal accuracy with hybrid Ichimoku Cloud strategies and refined LSTM models",
+    "Leveraged FinBERT and LLM-powered sentiment analysis, boosting stock prediction precision by 20%",
+    "Engineered real-time data visualizations using Plotly, Dash, and Streamlit for optimized insights"
+]
 
 [[params.experience]]
 company = "Knowledge Solutions India"
-    role = "ML Research Intern"
-    period = "September 2021 - November 2021"
-    description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
+role = "ML Research Intern"
+period = "Sept 2021 - Nov 2021"
+logo = "/images/company/knowledge-solutions.png"
+description = "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
+responsibilities = [
+    "Designed and deployed a scalable ML pipeline for insurance claim cost prediction",
+    "Optimized big data processing with PySpark and Dask, reducing computation time by 50%",
+    "Integrated AutoML for hyperparameter tuning, enhancing model performance",
+    "Developed interactive dashboards using Power BI and Streamlit for real-time insights"
+]
 
 [[params.experience]]
-    company = "Laugh Out Loud Ventures"
-    role = "SEO Sales Intern"
-    period = "Feb 2020 - March 2020"
-    description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
+company = "Laugh Out Loud Ventures Pvt Ltd"
+role = "Sales Intern"
+period = "Feb 2020 - March 2020"
+logo = "/images/company/lol-ventures.png"
+description = "Managed digital advertising strategies to optimize conversions for educational courses."
+responsibilities = [
+    "Led a sales team in transitioning to digital advertising during the pandemic",
+    "Optimized Google Ads and Facebook Ads strategies to drive higher conversions for educational courses",
+    "Utilized Google Analytics and CRM tools to refine targeting and improve campaign performance"
+]
 
 [[params.experience]]
-    role = "Open Source"
+    role = "Open Source Contributor"
     period = "Jun 2024"
     description = "I actively try to contribute to Open Source on my GitHub"
 
@@ -110,7 +130,7 @@ company = "Knowledge Solutions India"
 [[params.blogs]]
     title = "Scribe, the Most Advanced AI Transcription Model Yet"
     date = "2025-03-01"
-    summary = "Scribe, ElevenLabs’ first Speech to Text model, is the world’s most accurate transcription model."
+    summary = "Scribe, ElevenLabs' first Speech to Text model, is the world's most accurate transcription model."
     tags = ["AI", "Transcription", "Speech to Text"]
     content = """
     Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
@@ -119,12 +139,12 @@ company = "Knowledge Solutions India"
     image = "/images/blogs/scribe.webp"
 
 [[params.blogs]]
-    title = "Grok 3: The AI That Could Challenge DeepSeek and OpenAI’s Best"
+    title = "Grok 3: The AI That Could Challenge DeepSeek and OpenAI's Best"
     date = "2025-02-18"
     summary = "Elon Musk and his team showcased Grok 3, an AI model with state-of-the-art reasoning and problem-solving skills."
     tags = ["AI", "Grok 3", "OpenAI"]
     content = """
-    On X (formerly Twitter), Elon Musk revealed Grok 3’s impressive capabilities. Could this be the next major contender in AI?
+    On X (formerly Twitter), Elon Musk revealed Grok 3's impressive capabilities. Could this be the next major contender in AI?
     """
     link = "https://medium.com/@prxshetty/grok-3-the-ai-that-could-challenge-deepseek-and-openais-best-e20b3f8ad5e2"
     image = "/images/blogs/grok3.webp"
@@ -135,7 +155,7 @@ company = "Knowledge Solutions India"
     summary = "DeepSeek V3 is making waves in AI with its 671B parameters and groundbreaking architecture."
     tags = ["LLMs", "AI", "Deep Learning"]
     content = """
-    Meet DeepSeek V3 — the AI powerhouse that’s turning heads in Silicon Valley with its massive scale and innovative features...
+    Meet DeepSeek V3 — the AI powerhouse that's turning heads in Silicon Valley with its massive scale and innovative features...
     """
     link = "https://medium.com/@prxshetty/want-to-master-open-source-llms-in-2025-start-with-deepseek-v3-f485d45a6387"
     image = "/images/blogs/deepseek.webp"
@@ -157,7 +177,7 @@ company = "Knowledge Solutions India"
     summary = "A step-by-step guide to transitioning from relational databases to graph databases for better performance and scalability."
     tags = ["Databases", "GraphQL", "SQL"]
     content = """
-    Transitioning from SQL to a graph database can be daunting. Here’s a simple guide to make the process smooth and efficient...
+    Transitioning from SQL to a graph database can be daunting. Here's a simple guide to make the process smooth and efficient...
     """
     link = "https://medium.com/@prxshetty/forget-sql-headaches-learn-how-to-convert-schemas-to-a-graph-database-today-b78c144716ec"
     image = "/images/blogs/graphql.webp"
@@ -165,7 +185,7 @@ company = "Knowledge Solutions India"
 [[params.blogs]]
     title = "Claude can now use computers..."
     date = "2024-12-03"
-    summary = "Anthropic’s Claude 3.5 Sonnet AI now interacts with computers just like humans."
+    summary = "Anthropic's Claude 3.5 Sonnet AI now interacts with computers just like humans."
     tags = ["AI", "Claude", "Anthropic"]
     content = """
     What if your AI assistant could navigate a computer like you? With its latest update, Claude 3.5 Sonnet takes AI assistance to the next level...
@@ -188,21 +208,22 @@ company = "Knowledge Solutions India"
 [menu]
   [[menu.main]]
     name = "About"
-    url = "/about"
+    url = "/about/"
     weight = 1
   [[menu.main]]
     name = "Experience"
-    url = "/Experience"
+    url = "/experience/"
     weight = 2
   [[menu.main]]
     name = "Projects"
-    url = "/projects"
+    url = "/projects/"
     weight = 3
   [[menu.main]]
     name = "Blogs"
-    url = "/blogs"
+    url = "/blogs/"
     weight = 4
   [[menu.main]]
     name = "Contact Me"
-    url = "/contact"
+    url = "/contact/"
     weight = 5
+

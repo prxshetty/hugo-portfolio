@@ -1,0 +1,56 @@
+{{ $currentPage := . }}
+<header class="py-6 relative">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-center items-center">
+            <!-- Center - Navigation -->
+            <nav class="flex items-center space-x-8">
+                <a href="/" class="text-gray-300 hover:text-white transition-colors duration-300 {{ if .IsHome }}text-white font-semibold{{ end }}">Home</a>
+                <a href="/about/" class="text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-white font-semibold{{ end }}">About</a>
+                <a href="/experience/" class="text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-white font-semibold{{ end }}">Experience</a>
+                <a href="/projects/" class="text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-white font-semibold{{ end }}">Projects</a>
+                <a href="/blogs/" class="text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-white font-semibold{{ end }}">Blog</a>
+                <a href="/contact/" class="text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-white font-semibold{{ end }}">Contact</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    // Change the icons inside the button based on previous settings
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        themeToggleLightIcon.classList.remove('hidden');
+        themeToggleDarkIcon.classList.add('hidden');
+    } else {
+        themeToggleLightIcon.classList.add('hidden');
+        themeToggleDarkIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+        // Toggle icons
+        themeToggleDarkIcon.classList.toggle('hidden');
+        themeToggleLightIcon.classList.toggle('hidden');
+
+        // If is set in localStorage
+        if (localStorage.getItem('color-theme')) {
+            if (localStorage.getItem('color-theme') === 'light') {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            }
+        } else {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        }
+    });
+</script> 

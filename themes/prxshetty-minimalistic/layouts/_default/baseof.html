@@ -3,13 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ .Title }}</title>
+        <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            body {
-                background-color: #121212;
-                color: #ffffff;
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script>
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
             }
+        </script>
+        <style>
+            :root {
+                color-scheme: light dark;
+            }
+            
+            body {
+                @apply bg-white text-gray-900 dark:bg-[#121212] dark:text-gray-100;
+            }
+
             .tech-icon {
                 filter: grayscale(100%) brightness(200%);
                 transition: all 0.3s ease;
@@ -46,20 +59,11 @@
             }
         </style>
     </head>
-    <body class="bg-[#121212] text-white">
-        <header class="container mx-auto px-4 py-6">
-            <nav class="flex justify-between items-center">
-                <a href="/" class="text-xl font-bold">{{ .Site.Params.name }}</a>
-                <div class="space-x-6">
-                    {{ range .Site.Menus.main }}
-                    <a href="{{ .URL }}" class="text-gray-300 hover:text-white">{{ .Name }}</a>
-                    {{ end }}
-                </div>
-            </nav>
-        </header>
-
+    <body class="min-h-screen">
+        {{ partial "header" . }}
         <main>
             {{ block "main" . }}{{ end }}
         </main>
+        {{ partial "footer" . }}
     </body>
 </html> 

@@ -1,0 +1,123 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8">{{ .Title }}</h1>
+    
+    <!-- Bio Section -->
+    <div class="mb-12 bg-[#121212] p-6 rounded-lg border border-gray-700">
+        <div class="prose prose-invert prose-lg max-w-none">
+            {{ .Content }}
+        </div>
+    </div>
+    
+    <!-- Skills Section -->
+    <h2 class="text-2xl font-semibold mb-6">My Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <!-- AI/ML -->
+        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mb-4">
+                <svg class="w-12 h-12 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">AI & Machine Learning</h3>
+            <p class="text-gray-400">Python, PyTorch, TensorFlow, NLP, Computer Vision</p>
+        </div>
+        
+        <!-- Web Development -->
+        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mb-4">
+                <svg class="w-12 h-12 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25zM18.76 9h-2.631c-.144-1.819-.489-3.436-.93-4.732 2.107.886 3.747 2.585 3.561 4.732zM12 20.25c-1.033-1.474-1.914-3.954-2.088-6.75h4.176c-.174 2.796-1.055 5.276-2.088 6.75zm-2.295-9.75c.156-2.701.978-5.25 2.295-6.75 1.317 1.5 2.139 4.049 2.295 6.75h-4.59zm6.534-5.481c-.441 1.295-.786 2.913-.931 4.731h-2.631c.153-1.697.676-3.314 1.401-4.731h2.161zm-8.478 0c.725 1.417 1.248 3.034 1.401 4.731H6.531c-.144-1.819-.489-3.436-.93-4.732h2.16zM5.24 15h2.631c.144 1.819.489 3.436.93 4.732-2.107-.886-3.747-2.585-3.561-4.732zm6.76 4.732c.725-1.417 1.248-3.034 1.401-4.731h2.631c-.144 1.819-.489 3.436-.93 4.732h-3.102z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+            <p class="text-gray-400">React, Next.js, TypeScript, Node.js, TailwindCSS</p>
+        </div>
+        
+        <!-- Databases -->
+        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mb-4">
+                <svg class="w-12 h-12 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm1 3H7v2h6V7zm0 4H7v2h6v-2zm0 4H7v2h6v-2z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Databases</h3>
+            <p class="text-gray-400">PostgreSQL, MongoDB, Vector DBs, Redis</p>
+        </div>
+    </div>
+    
+    <!-- Interests Section -->
+    <h2 class="text-2xl font-semibold mb-6">Beyond Coding</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Reading -->
+        <div class="flex items-start p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mr-4">
+                <svg class="w-8 h-8 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm12 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-2 12v-7.5l4-2.1 4 2.1V21H13z M7 16a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H8a1 1 0 0 1-1-1zm0-3a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H8a1 1 0 0 1-1-1zm0-3a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H8a1 1 0 0 1-1-1z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Reading</h3>
+                <p class="text-gray-400">I enjoy reading about the latest developments in AI and technology to stay updated with the rapidly evolving field.</p>
+            </div>
+        </div>
+        
+        <!-- Writing -->
+        <div class="flex items-start p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mr-4">
+                <svg class="w-8 h-8 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.6 16.6l4.6-4.6-3-3-4.6 4.6 3 3zm-7.5 3.6l2.9-.7-2.2-2.2-.7 2.9zm15.1-14.4L19 2.6c-.3-.3-.9-.3-1.2 0l-1.6 1.6 3 3 1.6-1.6c.3-.3.3-.9 0-1.2zM4 18v2h2l8.5-8.5-2-2L4 18zm7-11v-5h-10v20h20v-10h-5v5h-10v-10h5z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Writing</h3>
+                <p class="text-gray-400">I write technical articles to share my knowledge and experiences with the wider developer community.</p>
+            </div>
+        </div>
+        
+        <!-- Gaming -->
+        <div class="flex items-start p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mr-4">
+                <svg class="w-8 h-8 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Gaming</h3>
+                <p class="text-gray-400">I enjoy playing strategy games that challenge my problem-solving skills and critical thinking.</p>
+            </div>
+        </div>
+        
+        <!-- Podcasts -->
+        <div class="flex items-start p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-100 transition-colors duration-300">
+            <div class="mr-4">
+                <svg class="w-8 h-8 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm4 5a1 1 0 0 0-1 1v6a1 1 0 0 0 1.5.87l5.998-3.001A1 1 0 0 0 16 12V6a1 1 0 0 0-1.5-.87L8.5 8.13z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Podcasts</h3>
+                <p class="text-gray-400">I listen to tech podcasts to gain insights from industry experts and stay informed about emerging trends.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .prose a {
+        @apply text-blue-400 hover:text-blue-300 transition-colors duration-300;
+    }
+    .prose h1 {
+        @apply text-4xl font-bold mb-8 text-gray-100;
+    }
+    .prose h2 {
+        @apply text-2xl font-semibold mt-8 mb-4 text-gray-200;
+    }
+    .prose p {
+        @apply text-gray-300;
+    }
+    .prose ul {
+        @apply text-gray-300;
+    }
+</style>
+{{ end }} 

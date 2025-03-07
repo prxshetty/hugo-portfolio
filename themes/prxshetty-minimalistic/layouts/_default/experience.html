@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <article class="prose prose-invert prose-lg max-w-none mb-12">
+        {{ .Content }}
+    </article>
+
+    <div class="space-y-8">
+        {{ with .Site.Params.experience }}
+            {{ range . }}
+            <div class="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-500 transition-colors duration-300">
+                {{ if .logo }}
+                <div class="w-24 h-24 flex-shrink-0 bg-gray-800 rounded-lg p-2">
+                    <img src="{{ .logo }}" alt="{{ .company }} logo" class="w-full h-full object-contain" onerror="this.src='/images/company/default.png'">
+                </div>
+                {{ end }}
+                <div class="flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-100">{{ .role }}</h3>
+                    {{ if .company }}<div class="text-blue-400 mb-2">{{ .company }}</div>{{ end }}
+                    <div class="text-gray-400 mb-4">{{ .period }}</div>
+                    {{ if .description }}<p class="text-gray-300 mb-4">{{ .description }}</p>{{ end }}
+                    {{ if .responsibilities }}
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        {{ range .responsibilities }}
+                        <li class="text-gray-300">
+                            <span class="text-gray-300">{{ . }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        {{ else }}
+            <div class="text-gray-300">No experience data found.</div>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+    .prose {
+        @apply text-gray-300;
+    }
+    .prose h1 {
+        @apply text-4xl font-bold mb-8 text-gray-100;
+    }
+    .prose h2 {
+        @apply text-2xl font-semibold mt-8 mb-4 text-gray-200;
+    }
+    .prose p {
+        @apply text-gray-300;
+    }
+    .prose ul {
+        @apply text-gray-300 list-disc list-inside;
+    }
+    .prose li {
+        @apply text-gray-300;
+    }
+    .prose a {
+        @apply text-blue-400 hover:text-blue-300 transition-colors duration-300;
+    }
+</style>
+{{ end }} 

@@ -234,52 +234,21 @@
     <!-- Blog Section -->
     <section class="mt-20 mb-20">
         <div class="flex justify-between items-center mb-8">
-            <h2 class="text-4xl font-bold">Latest Posts</h2>
-            <a href="/blogs" class="text-blue-500 hover:text-blue-400 transition-colors duration-200 text-lg">More...</a>
+            <h2 class="text-4xl font-bold">Latest Blogs</h2>
+            <a href="/blogs" class="text-blue-500 hover:text-blue-400 transition-colors duration-200 text-lg">View All</a>
         </div>
-        <div class="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
-            {{ range first 3 (where .Site.RegularPages "Section" "blogs") }}
-            <a href="{{ .Permalink }}" class="block group">
-                <article class="relative overflow-hidden rounded-lg bg-[#121212] border border-gray-700 transition-all duration-300 hover:border-blue-500 p-6">
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors duration-200">{{ .Title }}</h3>
-                            <p class="text-gray-400 text-sm mb-4">{{ .Date.Format "January 2, 2006" }}</p>
-                            <p class="text-gray-300 line-clamp-2">{{ .Summary }}</p>
-                        </div>
-                        <div class="ml-6 mt-1">
-                            <div class="transform transition-transform duration-300 group-hover:translate-x-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 group-hover:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 mt-4">
-                        {{ range .Params.tags }}
-                        <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                </article>
-            </a>
+        <div class="space-y-8 max-w-3xl mx-auto">
+            {{ range first 3 .Site.Params.blogs }}
+            <div class="group">
+                <p class="text-gray-400 text-sm mb-1">{{ .date }}</p>
+                <a href="{{ .link }}" class="block group" target="_blank">
+                    <h3 class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-2">{{ .title }}</h3>
+                </a>
+                <p class="text-gray-400">{{ .summary }}</p>
+            </div>
             {{ end }}
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="mt-32 mb-10">
-        <div class="max-w-3xl mx-auto">
-            <div class="border-t pt-10">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="text-center md:text-right">
-                        <p class="text-gray-400 text-sm">© {{ now.Format "2006" }} {{ .Site.Params.name }}. All rights reserved.</p>
-                        <p class="text-gray-500 text-xs mt-1">Built with ❤️ using Hugo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 </div>
 
 <style>
@@ -357,12 +326,10 @@
     }
 }
 
-/* Hero Section Styles */
 .max-w-3xl {
     border-color: rgba(75, 85, 99, 0.7); 
 }
 
-/* Project Card Styles */
 .project-card {
     height: 100%;
     display: flex;
