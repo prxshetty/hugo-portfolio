@@ -24,22 +24,165 @@ instagram = "https://instagram.com/prxshetty"
 [[params.experience]]
 company = "Marva.ai"
     role = "ML Engineer Intern"
-    period = "June, 2023 -August, 2023"
+    period = "June 2023 - August 2023"
     description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
 
 [[params.experience]]
 company = "Knowledge Solutions India"
     role = "ML Research Intern"
-    period = "September, 2021 - November, 2021"
+    period = "September 2021 - November 2021"
     description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
 
 [[params.experience]]
     company = "Laugh Out Loud Ventures"
     role = "SEO Sales Intern"
-    period = "Feb, 2020 - March, 2020"
+    period = "Feb 2020 - March 2020"
     description = "Adding features to an already built page. Minor website modifications. The project was ended in March 2024."
 
+[[params.experience]]
+    role = "Open Source"
+    period = "Jun 2024"
+    description = "I actively try to contribute to Open Source on my GitHub"
 
+[[params.projects]]
+    title = "Lumi - Agentic Framework"
+    description = "Built in 24 hours at BrickHack 11, Lumi is a real-time voice assistant with 10 custom tools such as script execution, web searches, AI image generation, and more—all controllable by voice with interruption capabilities."
+    tech = "Python, Chainlit, Speechmatics Flow, LangChain, SQLite, Grok API, AlphaVantage API, DALL-E"
+    image = "/images/projects/lumi.png"
+    link = "https://github.com/ka8540/Brick-Hack11/"
+
+[[params.projects]]
+    title = "JobTrail - Web Development"
+    description = "Job Trail is a Chrome extension that automatically categorizes Gmail emails related to job applications based on their content."
+    tech = "Next.js, React, TypeScript, Tailwind CSS, Google Fonts"
+    image = "/images/projects/jobtrail.png"
+    link = "https://github.com/prxshetty/jobtrail"
+
+[[params.projects]]
+    title = "Depth Segmentation - Computer Vision"
+    description = "Trying out Intel's MiDaS Model with greyscale and Upscaler for better results."
+    tech = "MiDaS, PyTorch, Scikit-image, CUDA"
+    image = "/images/projects/depth-seg.png"
+    link = "https://github.com/prxshetty/midas-depthseg"
+
+[[params.projects]]
+    title = "Resume Chatbot - Natural Language Processing"
+    description = "LLM Chatbot using Supabase for vectorStore, OpenAI API for embeddings with adjusted chunk size and overlaps for Resumes."
+    tech = "Python, OpenAI API, Supabase, LangChain"
+    image = "/images/projects/llm-chatbot.png"
+    link = "https://github.com/prxshetty/resume-chatbot"
+
+[[params.projects]]
+    title = "Large Language Model - Deep Learning"
+    description = "A machine learning project to build a large language model from scratch, inspired by Karpathy's nn."
+    tech = "Python, PyTorch, Neural Networks, Statistics"
+    image = "/images/projects/llm-scratch.jpg"
+    link = "https://github.com/prxshetty/karpathy-nn"
+
+[[params.projects]]
+    title = "AutoMail AI - Natural Language Processing"
+    description = "An AI-powered email automation system using NLP, DocTran, API."
+    tech = "Python, NLP, TensorFlow, Flask, OpenAI API, DocTran"
+    image = "/images/projects/automail_ai.png"
+    link = "https://github.com/prxshetty/automail-ai"
+
+[[params.projects]]
+    title = "Image Enhancement with OpenCV DNN - Computer Vision"
+    description = "Mini Python code for image super resolution using DNN in OpenCV, trying out LapSRN and EDSR."
+    tech = "Python, OpenCV, CUDA"
+    image = "/images/projects/image_enhance.png"
+    link = "https://github.com/prxshetty/Super-Resolution"
+
+[[params.projects]]
+    title = "NBA Influence Predictor - Data Analysis"
+    description = "Python & R project predicting NBA player & team valuations based on various factors."
+    tech = "Python, R, pandas, statsmodels, matplotlib"
+    image = "/images/projects/nba_predictor.png"
+    link = "https://github.com/prxshetty/NBAInfluencePredictor"
+
+[[params.projects]]
+    title = "NYC Parks Eventful Mongoers - Web Development"
+    description = "Web app that discovers NYC Parks events via text & map search using Python, Flask, Node.js, and MongoDB."
+    tech = "Python, Flask, Node.js, MongoDB, Mapbox"
+    image = "/images/projects/nyc_parks.jpg"
+    link = "https://github.com/prxshetty/mongo-project-eventfulmongoers"
+
+[[params.blogs]]
+    title = "Scribe, the Most Advanced AI Transcription Model Yet"
+    date = "2025-03-01"
+    summary = "Scribe, ElevenLabs’ first Speech to Text model, is the world’s most accurate transcription model."
+    tags = ["AI", "Transcription", "Speech to Text"]
+    content = """
+    Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
+    """
+    link = "https://medium.com/@prxshetty/scribe-the-most-advanced-ai-transcription-model-yet-d5cd7f96368d"
+    image = "/images/blogs/scribe.webp"
+
+[[params.blogs]]
+    title = "Grok 3: The AI That Could Challenge DeepSeek and OpenAI’s Best"
+    date = "2025-02-18"
+    summary = "Elon Musk and his team showcased Grok 3, an AI model with state-of-the-art reasoning and problem-solving skills."
+    tags = ["AI", "Grok 3", "OpenAI"]
+    content = """
+    On X (formerly Twitter), Elon Musk revealed Grok 3’s impressive capabilities. Could this be the next major contender in AI?
+    """
+    link = "https://medium.com/@prxshetty/grok-3-the-ai-that-could-challenge-deepseek-and-openais-best-e20b3f8ad5e2"
+    image = "/images/blogs/grok3.webp"
+
+[[params.blogs]]
+    title = "Want to Master Open-Source LLMs in 2025? Start with DeepSeek V3"
+    date = "2025-01-05"
+    summary = "DeepSeek V3 is making waves in AI with its 671B parameters and groundbreaking architecture."
+    tags = ["LLMs", "AI", "Deep Learning"]
+    content = """
+    Meet DeepSeek V3 — the AI powerhouse that’s turning heads in Silicon Valley with its massive scale and innovative features...
+    """
+    link = "https://medium.com/@prxshetty/want-to-master-open-source-llms-in-2025-start-with-deepseek-v3-f485d45a6387"
+    image = "/images/blogs/deepseek.webp"
+
+[[params.blogs]]
+    title = "AI Benchmarks: Are we measuring the right thing?"
+    date = "2025-01-01"
+    summary = "Are AI benchmarks truly representative of real-world performance, or are they misleading our understanding?"
+    tags = ["AI", "Benchmarks", "Machine Learning"]
+    content = """
+    What if the metrics we rely on to evaluate AI models are flawed? This article explores the limitations of current benchmarking methods...
+    """
+    link = "https://medium.com/@prxshetty/ai-benchmarks-are-we-measuring-the-right-thing-1b601fcc0e4e"
+    image = "/images/blogs/benchmark.webp"
+
+[[params.blogs]]
+    title = "Forget SQL Headaches: Learn How to Convert Schemas to a Graph Database Today"
+    date = "2024-12-04"
+    summary = "A step-by-step guide to transitioning from relational databases to graph databases for better performance and scalability."
+    tags = ["Databases", "GraphQL", "SQL"]
+    content = """
+    Transitioning from SQL to a graph database can be daunting. Here’s a simple guide to make the process smooth and efficient...
+    """
+    link = "https://medium.com/@prxshetty/forget-sql-headaches-learn-how-to-convert-schemas-to-a-graph-database-today-b78c144716ec"
+    image = "/images/blogs/graphql.webp"
+
+[[params.blogs]]
+    title = "Claude can now use computers..."
+    date = "2024-12-03"
+    summary = "Anthropic’s Claude 3.5 Sonnet AI now interacts with computers just like humans."
+    tags = ["AI", "Claude", "Anthropic"]
+    content = """
+    What if your AI assistant could navigate a computer like you? With its latest update, Claude 3.5 Sonnet takes AI assistance to the next level...
+    """
+    link = "https://medium.com/@prxshetty/claude-can-now-use-computers-9b056d1e0e8b"
+    image = "/images/blogs/computeruse.png"
+
+[[params.blogs]]
+    title = "Survey of Activation Functions and Initialization Methods"
+    date = "2024-09-09"
+    summary = "A research-backed exploration of activation functions and initialization techniques in deep learning."
+    tags = ["Deep Learning", "Neural Networks", "AI Research"]
+    content = """
+    Kicking off a new research series, this article breaks down activation functions and their impact on training stability...
+    """
+    link = "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16"
+    image = "/images/blogs/research-01.png"
 
 
 [menu]
