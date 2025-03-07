@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +16,11 @@
         </script>
         <style>
             :root {
-                color-scheme: light dark;
+                color-scheme: dark;
             }
             
             body {
-                @apply bg-white text-gray-900 dark:bg-[#121212] dark:text-gray-100;
+                @apply bg-[#121212] text-gray-100;
             }
 
             .tech-icon {
@@ -59,7 +59,7 @@
             }
         </style>
     </head>
-    <body class="min-h-screen">
+    <body class="min-h-screen bg-[#121212] text-gray-100">
         {{ partial "header" . }}
         <main>
             {{ block "main" . }}{{ end }}

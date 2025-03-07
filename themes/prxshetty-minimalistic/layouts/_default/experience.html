@@ -1,62 +1,161 @@
 {{ define "main" }}
 <div class="max-w-4xl mx-auto px-4 py-12">
-    <article class="prose prose-invert prose-lg max-w-none mb-12">
-        {{ .Content }}
-    </article>
-
+    <h1 class="text-5xl font-bold mb-3 text-gray-100">{{ .Title }}</h1>
+    <div class="mb-12 bg-[#121212] p-8 rounded-lg">
+        <div class="intro-section">
+            <div class="prose prose-invert prose-l max-w-none">
+                {{ .Content }}
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4">
+                <div class="stat-box">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Recommendations Received</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <div class="space-y-8">
         {{ with .Site.Params.experience }}
             {{ range . }}
-            <div class="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-[#121212] border border-gray-700 hover:border-gray-500 transition-colors duration-300">
-                {{ if .logo }}
-                <div class="w-24 h-24 flex-shrink-0 bg-gray-800 rounded-lg p-2">
-                    <img src="{{ .logo }}" alt="{{ .company }} logo" class="w-full h-full object-contain" onerror="this.src='/images/company/default.png'">
-                </div>
-                {{ end }}
-                <div class="flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-100">{{ .role }}</h3>
-                    {{ if .company }}<div class="text-blue-400 mb-2">{{ .company }}</div>{{ end }}
-                    <div class="text-gray-400 mb-4">{{ .period }}</div>
-                    {{ if .description }}<p class="text-gray-300 mb-4">{{ .description }}</p>{{ end }}
-                    {{ if .responsibilities }}
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        {{ range .responsibilities }}
-                        <li class="text-gray-300">
-                            <span class="text-gray-300">{{ . }}</span>
-                        </li>
+            <div class="group">
+                <div class="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-[#121212] transition-all duration-300">
+                    <div class="flex-shrink-0 w-2 bg-blue-400 rounded-full"></div>
+                    <div class="flex-grow pl-6">
+                        {{ if .company }}
+                            <div class="text-blue-400">{{ .company }}</div>
                         {{ end }}
-                    </ul>
-                    {{ end }}
+                        <div class="flex flex-col md:flex-row md:items-center gap-1 mb-1">
+                            <h3 class="text-xl font-semibold text-gray-100">{{ .role }}</h3>
+                        </div>
+                        <div class="text-gray-400 mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"/>
+                            </svg>
+                            <span>{{ .period }}</span>
+                        </div>
+                        {{ if .description }}
+                        <p class="text-gray-300 mb-4 leading-relaxed">{{ .description }}</p>
+                        {{ end }}
+
+                        {{ if .responsibilities }}
+                        <div class="mt-4">
+                            <h4 class="text-lg font-medium text-gray-200 mb-3">Key Responsibilities:</h4>
+                            <ul class="list-none space-y-2">
+                                {{ range .responsibilities }}
+                                <li class="flex items-start gap-2 text-gray-300">
+                                    <svg class="w-5 h-5 mt-1 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span>{{ . }}</span>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .technologies }}
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            {{ range .technologies }}
+                            <span class="px-3 py-1 text-sm bg-gray-800 text-gray-300 rounded-full">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}                        
+                        {{ if eq .company "GitHub" }}
+                        <div class="mt-4">
+                            <a href="https://github.com/prxshetty" 
+                               class="inline-flex items-center gap-2 px-4 py-2  text-blue-400 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View GitHub Profile
+                            </a>
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
             {{ end }}
         {{ else }}
-            <div class="text-gray-300">No experience data found.</div>
+            <div class="text-gray-300 p-6 bg-[#121212] rounded-lg">
+                <p class="text-center">No experience data found. Please add some experience entries to your site configuration.</p>
+            </div>
         {{ end }}
     </div>
+
 </div>
 
 <style>
     .prose {
         @apply text-gray-300;
+        font-size: 1.125rem;
     }
     .prose h1 {
         @apply text-4xl font-bold mb-8 text-gray-100;
     }
     .prose h2 {
-        @apply text-2xl font-semibold mt-8 mb-4 text-gray-200;
+        @apply text-2xl font-semibold mt-8 mb-4 text-gray-100;
     }
     .prose p {
-        @apply text-gray-300;
+        @apply text-gray-300 mb-6;
+        line-height: 1.9;
+        font-size: 1.00rem;
+    }
+    .prose p + p {
+        margin-top: 2rem;
     }
     .prose ul {
-        @apply text-gray-300 list-disc list-inside;
+        @apply text-gray-300 list-disc list-inside space-y-2;
     }
     .prose li {
         @apply text-gray-300;
     }
     .prose a {
         @apply text-blue-400 hover:text-blue-300 transition-colors duration-300;
+    }
+    
+    .intro-section {
+        position: relative;
+    }
+    
+    .intro-section::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+    }
+    
+    .stat-box {
+        @apply bg-[#1a1a1a] p-4 rounded-lg border border-gray-800 flex-1 min-w-[120px] text-center transition-all duration-300;
+    }
+    
+    .stat-box:hover {
+        @apply border-blue-400 bg-[#1e1e1e];
+        transform: translateY(-2px);
+    }
+    
+    .stat-number {
+        @apply text-3xl font-bold text-blue-400 mb-1;
+    }
+    
+    .stat-label {
+        @apply text-sm text-gray-400;
     }
 </style>
 {{ end }} 

@@ -12,6 +12,7 @@ theme = 'prxshetty-minimalistic'
 name = "Pranam Shetty"
 location = "Rochester, NY"
 description = "Currently focused on Agentic Frameworks, computer use and building LLM based applications. Insane about AI."
+profile_image = "/images/profile.jpg"
 discord = "prxshetty"
 github = "https://github.com/prxshetty"
 email = "prxshetty@gmail.com"
@@ -20,12 +21,11 @@ medium = "https://www.medium.com/@prxshetty"
 linkedin = "https://www.linkedin.com/in/prxshetty"
 instagram = "https://instagram.com/prxshetty"
 
-
 [[params.experience]]
 company = "Marva.ai"
 role = "ML Engineer Intern"
 period = "June 2023 - Aug 2023"
-logo = "/images/company/marva-ai.png"
+logo = "/images/company/marva.png"
 description = "Developed deep learning models for financial stock prediction and real-time data visualization."
 responsibilities = [
     "Developed financial stock prediction models integrating advanced deep learning techniques",
@@ -38,7 +38,7 @@ responsibilities = [
 company = "Knowledge Solutions India"
 role = "ML Research Intern"
 period = "Sept 2021 - Nov 2021"
-logo = "/images/company/knowledge-solutions.png"
+logo = "/images/company/ksi.png"
 description = "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
 responsibilities = [
     "Designed and deployed a scalable ML pipeline for insurance claim cost prediction",
@@ -49,9 +49,9 @@ responsibilities = [
 
 [[params.experience]]
 company = "Laugh Out Loud Ventures Pvt Ltd"
-role = "Sales Intern"
+role = "SEO Analytics Intern"
 period = "Feb 2020 - March 2020"
-logo = "/images/company/lol-ventures.png"
+logo = "/images/company/lol.png"
 description = "Managed digital advertising strategies to optimize conversions for educational courses."
 responsibilities = [
     "Led a sales team in transitioning to digital advertising during the pandemic",
@@ -60,9 +60,11 @@ responsibilities = [
 ]
 
 [[params.experience]]
+    company = "GitHub"
     role = "Open Source Contributor"
     period = "Jun 2024"
     description = "I actively try to contribute to Open Source on my GitHub"
+    github_username = "prxshetty"
 
 [[params.projects]]
     title = "Lumi - Agentic Framework"
@@ -203,6 +205,12 @@ responsibilities = [
     """
     link = "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16"
     image = "/images/blogs/research-01.png"
+
+[[params.voluntary]]
+role = "Volunteer"
+organization = "Bunts Sangha"
+period = "2009 - Present"
+description = "Proud member of Bunts Sangha, a vibrant community organization dedicated to the social, cultural, and educational upliftment of its members and society at large."
 
 
 [menu]
