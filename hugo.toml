@@ -1,7 +1,11 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://prxshetty.github.io/hugo-prxshetty/'
 languageCode = 'en-us'
 title = 'Pranam Shetty'
 theme = 'prxshetty-minimalistic'
+
+# URL handling
+relativeURLs = true
+canonifyURLs = true
 
 # Taxonomy configuration
 [taxonomies]
