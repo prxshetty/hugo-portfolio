@@ -2,33 +2,34 @@
 <head>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
-<div class="w-1/2 mx-auto py-12">
+<div class="w-full md:w-4/5 lg:w-3/5 mx-auto px-4 py-12">
     <!-- Hero Section -->
     <section class="mb-16">
         <div class="max-w-3xl mx-auto p-6 border border-gray-600 rounded-lg bg-[#121212] shadow-lg relative">
-            <div class="absolute top-4 right-4 flex space-x-2">
+            <!-- Social Icons - Moved to bottom for mobile -->
+            <div class="mt-6 flex flex-wrap justify-center gap-3 md:absolute md:top-4 md:right-4 md:flex-nowrap md:justify-end md:mt-0">
                 {{ with .Site.Params.email }}
-                <a href="mailto:{{ . }}" class="text-gray-4 00 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500">
+                <a href="mailto:{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500 transition-all">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                 </a>
                 {{ end }}
                 {{ with .Site.Params.github }}
-                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500" target="_blank" rel="noopener noreferrer">
+                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500 transition-all" target="_blank" rel="noopener noreferrer">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
                 </a>
                 {{ end }}
                 {{ with .Site.Params.twitter }}
-                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500" target="_blank" rel="noopener noreferrer">
+                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500 transition-all" target="_blank" rel="noopener noreferrer">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
                 </a>
                 {{ end }}
                 {{ with .Site.Params.medium }}
-                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500" target="_blank" rel="noopener noreferrer">
+                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500 transition-all" target="_blank" rel="noopener noreferrer">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
                 </a>
                 {{ end }}
                 {{ with .Site.Params.linkedin }}
-                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500" target="_blank" rel="noopener noreferrer">
+                <a href="{{ . }}" class="text-gray-400 hover:text-white bg-[#121212] p-2 rounded-md border border-gray-700 hover:border-gray-500 transition-all" target="_blank" rel="noopener noreferrer">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 </a>
                 {{ end }}
@@ -40,8 +41,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    
-                    
                     {{ .Site.Params.location }}
                 </p>
                 <p class="text-xl mb-6">{{ .Site.Params.description }}</p>
@@ -58,62 +57,32 @@
                 <div class="carousel-track">
                     <!-- Original set -->
                     <div class="carousel-item">
-                        <i class="devicon-html5-plain text-4xl text-white"></i>
-                        <span class="text-lg">HTML5</span>
+                        <i class="devicon-python-plain text-2xl"></i>
+                        <span class="text-xl">Python</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-css3-plain text-4xl text-white"></i>
-                        <span class="text-lg">CSS3</span>
+                        <i class="devicon-streamlit-plain text-2xl"></i>
+                        <span class="text-xl">Streamlit</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-javascript-plain text-4xl text-white"></i>
-                        <span class="text-lg">JavaScript</span>
+                        <i class="devicon-tensorflow-original text-2xl"></i>
+                        <span class="text-xl">TensorFlow</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-hugo-plain text-4xl text-white"></i>
-                        <span class="text-lg">Hugo</span>
+                        <i class="devicon-jupyter-plain text-2xl"></i>
+                        <span class="text-xl">Jupyter</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-nextjs-plain text-4xl text-white"></i>
-                        <span class="text-lg">Next.js</span>
+                        <i class="devicon-mongodb-plain text-2xl"></i>
+                        <span class="text-xl">MongoDB</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-git-plain text-4xl text-white"></i>
-                        <span class="text-lg">Git</span>
+                        <i class="devicon-archlinux-plain text-2xl"></i>
+                        <span class="text-xl">Arch Linux</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-java-plain text-4xl text-white"></i>
-                        <span class="text-lg">Java</span>
-                    </div>
-                    
-                    <!-- Duplicate set for seamless looping -->
-                    <div class="carousel-item">
-                        <i class="devicon-html5-plain text-4xl text-white"></i>
-                        <span class="text-lg">HTML5</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-css3-plain text-4xl text-white"></i>
-                        <span class="text-lg">CSS3</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-javascript-plain text-4xl text-white"></i>
-                        <span class="text-lg">JavaScript</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-hugo-plain text-4xl text-white"></i>
-                        <span class="text-lg">Hugo</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-nextjs-plain text-4xl text-white"></i>
-                        <span class="text-lg">Next.js</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-git-plain text-4xl text-white"></i>
-                        <span class="text-lg">Git</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-java-plain text-4xl text-white"></i>
-                        <span class="text-lg">Java</span>
+                        <i class="devicon-fastapi-plain text-2xl"></i>
+                        <span class="text-xl">FastAPI</span>
                     </div>
                 </div>
             </div>
@@ -123,54 +92,46 @@
                 <div class="carousel-track-reverse">
                     <!-- Original set -->
                     <div class="carousel-item">
-                        <i class="devicon-postgresql-plain text-4xl text-white"></i>
-                        <span class="text-lg">PostgreSQL</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,3C7.58,3 4,4.79 4,7V17C4,19.21 7.59,21 12,21C16.41,21 20,19.21 20,17V7C20,4.79 16.42,3 12,3M18,17C18,17.5 15.87,19 12,19C8.13,19 6,17.5 6,17V14.77C7.61,15.55 9.72,16 12,16C14.28,16 16.39,15.55 18,14.77V17M18,12.45C16.7,13.4 14.42,14 12,14C9.58,14 7.3,13.4 6,12.45V9.64C7.47,10.47 9.61,11 12,11C14.39,11 16.53,10.47 18,9.64V12.45M12,9C8.13,9 6,7.5 6,7C6,6.5 8.13,5 12,5C15.87,5 18,6.5 18,7C18,7.5 15.87,9 12,9Z"/>
+                        </svg>
+                        <span class="text-xl">Llama</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-redis-plain text-4xl text-white"></i>
-                        <span class="text-lg">Redis</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/>
+                        </svg>
+                        <span class="text-xl">Whisper</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-mongodb-plain text-4xl text-white"></i>
-                        <span class="text-lg">MongoDB</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+                        </svg>
+                        <span class="text-xl">Openrouter</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-sqlite-plain text-4xl text-white"></i>
-                        <span class="text-lg">SQLite</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                        <span class="text-xl">Together AI</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-supabase-plain text-4xl text-white"></i>
-                        <span class="text-lg">Supabase</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                        </svg>
+                        <span class="text-xl">Tavily</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="text-4xl text-white">🌲</i>
-                        <span class="text-lg">Pinecone</span>
-                    </div>
-                    
-                    <!-- Duplicate set for seamless looping -->
-                    <div class="carousel-item">
-                        <i class="devicon-postgresql-plain text-4xl text-white"></i>
-                        <span class="text-lg">PostgreSQL</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                        </svg>
+                        <span class="text-xl">Speechmatics</span>
                     </div>
                     <div class="carousel-item">
-                        <i class="devicon-redis-plain text-4xl text-white"></i>
-                        <span class="text-lg">Redis</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-mongodb-plain text-4xl text-white"></i>
-                        <span class="text-lg">MongoDB</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-sqlite-plain text-4xl text-white"></i>
-                        <span class="text-lg">SQLite</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="devicon-supabase-plain text-4xl text-white"></i>
-                        <span class="text-lg">Supabase</span>
-                    </div>
-                    <div class="carousel-item">
-                        <i class="text-4xl text-white">🌲</i>
-                        <span class="text-lg">Pinecone</span>
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M12.447,12.265V10.591c.163-.012.327-.02.494-.026,4.577-.143,7.581,3.934,7.581,3.934S17.278,19,13.8,19a4.2,4.2,0,0,1-1.353-.217V13.712c1.782.215,2.14,1,3.212,2.788l2.383-2.009A6.312,6.312,0,0,0,13.37,12.21a8.606,8.606,0,0,0-.923.055m0-5.529v2.5c.164-.013.329-.024.494-.03,6.366-.214,10.513,5.221,10.513,5.221s-4.764,5.792-9.726,5.792a7.4,7.4,0,0,1-1.281-.112v1.545a8.528,8.528,0,0,0,1.067.069c4.618,0,7.958-2.358,11.192-5.15.535.43,2.731,1.474,3.182,1.932-3.075,2.574-10.241,4.649-14.3,4.649-.392,0-.769-.024-1.138-.06v2.172H30V6.736Zm0,12.051v1.32c-4.271-.762-5.457-5.2-5.457-5.2a9.234,9.234,0,0,1,5.457-2.64v1.447h-.006a4.1,4.1,0,0,0-3.184,1.456s.782,2.811,3.19,3.62M4.861,14.713a10.576,10.576,0,0,1,7.586-4.122V9.236C6.848,9.685,2,14.427,2,14.427s2.746,7.939,10.447,8.665v-1.44C6.8,20.941,4.861,14.713,4.861,14.713Z"/>
+                        </svg>
+                        <span class="text-xl">CUDA</span>
                     </div>
                 </div>
             </div>
@@ -180,9 +141,13 @@
     <section>
         <h2 class="text-4xl font-bold mb-8">Experience</h2>
         <div class="space-y-8 max-w-3xl mx-auto">
-            {{ range .Site.Params.experience }}
-            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-2 before:h-full before:bg-gradient-to-b before:from-blue-500 before:to-purple-500 before:rounded-full">
-                <div class="absolute -left-2 top-0 w-6 h-6 bg-[#121212] border-2 border-blue-500 rounded-full"></div>
+            {{ range $index, $exp := .Site.Params.experience }}
+            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-gray-700 before:rounded-full">
+                {{ if eq .company "Open Source Contributor" }}
+                <div class="absolute -left-1.5 top-0 w-3 h-3 bg-[#121212] border border-blue-400 rounded-full"></div>
+                {{ else }}
+                <div class="absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
+                {{ end }}
                 <h3 class="text-gray-400 text-xl">{{ .company }}</h3>
                 <p class="text-2xl font-semibold">{{ .role }}</p>
                 <p class="text-gray-400 text-sm">{{ .period }}</p>
@@ -196,6 +161,7 @@
     <section class="mt-20 mb-20">
         <div class="flex justify-between items-center mb-8">
             <h2 class="text-4xl font-bold">Projects</h2>
+            <a href="/projects" class="text-blue-500 hover:text-blue-400 transition-colors duration-200 text-lg">More...</a>
         </div>
         <div class="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
             {{ range first 2 .Site.Params.projects }}
@@ -206,15 +172,15 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 z-20"></div>
                     
                     <!-- Content that moves up on hover -->
-                    <div class="absolute inset-0 z-30 p-6 flex flex-col justify-end transform transition-transform duration-500 translate-y-0 group-hover:translate-y-[-30px]">
-                        <h3 class="text-2xl font-bold mb-3 text-white">{{ .title }}</h3>
-                        <div class="flex flex-wrap gap-2 mb-3">
+                    <div class="absolute inset-0 z-30 p-6 flex flex-col justify-end transform transition-transform duration-500 translate-y-0 group-hover:translate-y-[-20px]">
+                        <h3 class="text-2xl font-bold mb-2 text-white">{{ .title }}</h3>
+                        <div class="flex flex-wrap gap-2 mb-2">
                             {{ $techs := split .tech "," }}
                             {{ range $tech := $techs }}
                             <span class="px-2 py-1 bg-gray-800/80 backdrop-blur-sm rounded-md text-xs font-medium text-gray-200 border border-gray-700/50">{{ $tech }}</span>
                             {{ end }}
                         </div>
-                        <p class="text-sm text-gray-300 line-clamp-2 mb-4">{{ .description }}</p>
+                        <p class="text-sm text-gray-300 line-clamp-2 mb-3">{{ .description }}</p>
                         
                         <!-- Learn More button -->
                         <a href="{{ .link }}" class="bg-white/90 backdrop-blur-sm hover:bg-white text-black text-sm font-medium py-1.5 px-3 rounded-md inline-block transition-all duration-300 transform opacity-0 group-hover:opacity-100 w-fit flex items-center shadow-lg hover:shadow-xl">
@@ -228,7 +194,6 @@
             </div>
             {{ end }}
         </div>
-        <a href="/projects" class="text-blue-500 hover:text-blue-400 transition-colors duration-200 text-lg">More...</a>
     </section>
 
     <!-- Blog Section -->
@@ -319,10 +284,10 @@
 
 @keyframes scroll-reverse {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(-50%);
     }
 }
 
