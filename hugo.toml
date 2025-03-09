@@ -15,7 +15,7 @@ canonifyURLs = true
 [params]
 name = "Pranam Shetty"
 location = "Rochester, NY"
-description = "Currently focused on Agentic Frameworks, computer use and building LLM based applications. Insane about AI."
+description = "AI Developer. ML Engineer. I finetune models, build scalable pipelines and automate workflows."
 profile_image = "/images/profile.jpg"
 discord = "prxshetty"
 github = "https://github.com/prxshetty"
