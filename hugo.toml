@@ -1,4 +1,4 @@
-baseURL = "https://prxshetty.github.io"
+baseURL = "https://pranamshetty.dev"
 languageCode = 'en-us'
 title = 'Pranam Shetty'
 theme = 'prxshetty-minimalistic'
@@ -134,7 +134,7 @@ responsibilities = [
     link = "https://github.com/prxshetty/mongo-project-eventfulmongoers"
 
 [[params.blogs]]
-    title = "Why AI Still Forgets — And How We’re Fixing It"
+    title = "Why AI Still Forgets — And How We're Fixing It"
     date = "2025-03-04"
     summary = "Hey everyone! So, you know how Large Language Models (LLMs) sometimes seem a bit… forgetful?"
     tags = ["LLM", "Research", "architecture" ]
