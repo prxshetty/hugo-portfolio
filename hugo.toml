@@ -1,4 +1,4 @@
-baseURL = 'https://www.pranamshetty.dev/'
+baseURL = "https://prxshetty.github.io/hugo-prxshetty/"
 languageCode = 'en-us'
 title = 'Pranam Shetty'
 theme = 'prxshetty-minimalistic'
