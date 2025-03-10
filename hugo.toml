@@ -1,6 +1,6 @@
 baseURL = 'https://prxshetty.github.io/hugo-prxshetty/'
 languageCode = 'en-us'
-title = 'Pranam S.'
+title = 'Pranam Shetty'
 theme = 'prxshetty-minimalistic'
 
 # URL handling
@@ -137,7 +137,7 @@ responsibilities = [
     title = "Why AI Still Forgets — And How We’re Fixing It"
     date = "2025-03-04"
     summary = "Hey everyone! So, you know how Large Language Models (LLMs) sometimes seem a bit… forgetful?"
-    tags = ["LLM", "", "Speech to Text"]
+    tags = ["LLM", "Research", "architecture" ]
     content = """
     Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
     """
@@ -217,7 +217,7 @@ responsibilities = [
 role = "Volunteer"
 organization = "Bunts Sangha"
 period = "2009 - Present"
-description = "Proud member of Bunts Sangha, a vibrant community organization dedicated to the social, cultural, and educational upliftment of its members and society at large."
+description = "As a volunteer at Bunts Sangha Nashik, I tutored students, prepared study materials, organized festivals and traditional performances, visited elderly to promote community unity, and coordinated fundraising campaigns."
 
 
 [menu]
