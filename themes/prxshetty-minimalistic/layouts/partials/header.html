@@ -8,7 +8,7 @@
                 </a>
             </div>            
             <nav class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                <a href="{{ .Site.BaseURL }}" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if .IsHome }}text-white font-semibold{{ end }}">Home</a>
+                <!-- <a href="{{ .Site.BaseURL }}" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if .IsHome }}text-white font-semibold{{ end }}">Home</a> -->
                 <a href="{{ .Site.BaseURL }}about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-white font-semibold{{ end }}">About</a>
                 <a href="{{ .Site.BaseURL }}experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-white font-semibold{{ end }}">Experience</a>
                 <a href="{{ .Site.BaseURL }}projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-white font-semibold{{ end }}">Projects</a>

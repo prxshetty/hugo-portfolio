@@ -3,16 +3,16 @@
     <h1 class="text-5xl font-bold mb-3 text-gray-100">{{ .Title }}</h1>
     <div class="mb-12 bg-[#121212] p-8 rounded-lg">
         <div class="intro-section">
-            <div class="text-gray-300 text-2xl prose prose-invert prose-l max-w-none">
+            <div class="text-gray-300 text-3xl prose prose-invert prose-l max-w-none">
                 {{ .Content }}
             </div>
-            <div class="mt-8 flex flex-wrap gap-4">
+            <div class="mt-8 text-sl flex flex-wrap gap-4">
                 <div class="stat-box">
-                    <div class="stat-number">3+</div>
-                    <div class="stat-label">Companies Worked</div>
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Technologies Used</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">30+</div>
+                    <div class="stat-number">35+</div>
                     <div class="stat-label">Projects Completed</div>
                 </div>
                 <div class="stat-box">
@@ -30,36 +30,30 @@
     <div class="space-y-8">
         {{ with .Site.Params.experience }}
             {{ range . }}
-            <div class="group">
-                <div class="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-[#121212] transition-all duration-300">
-                    <div class="flex-shrink-0 w-2 bg-blue-400 rounded-full"></div>
-                    <div class="flex-grow pl-6">
+            <div class="group relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-gray-700 before:rounded-full">
+                <div class="absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="p-6 rounded-lg bg-[#121212] transition-all duration-300">
+                    <div class="flex-grow">
                         {{ if .company }}
-                            <div class="text-blue-400">{{ .company }}</div>
+                            <div class="text-gray-400 text-xl">{{ .company }}</div>
                         {{ end }}
                         <div class="flex flex-col md:flex-row md:items-center gap-1 mb-1">
-                            <h3 class="text-xl font-semibold text-gray-100">{{ .role }}</h3>
+                            <h3 class="text-3xl font-semibold text-gray-100">{{ .role }}</h3>
                         </div>
-                        <div class="text-gray-400 mb-4 flex items-center gap-2">
-                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"/>
-                            </svg>
-                            <span>{{ .period }}</span>
+                        <div class="text-gray-400 mb-4 text-sm">
+                            {{ .period }}
                         </div>
-                        {{ if .description }}
-                        <p class="text-gray-300 mb-4 leading-relaxed">{{ .description }}</p>
-                        {{ end }}
+                        <!-- {{ if .description }}
+                        <p class="text-gray-300 mb-4 leading-relaxed text-lg">{{ .description }}</p>
+                        {{ end }} -->
 
                         {{ if .responsibilities }}
                         <div class="mt-4">
                             <h4 class="text-lg font-medium text-gray-200 mb-3">Key Responsibilities:</h4>
                             <ul class="list-none space-y-2">
                                 {{ range .responsibilities }}
-                                <li class="flex items-start gap-2 text-gray-300">
-                                    <svg class="w-5 h-5 mt-1 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <span>{{ . }}</span>
+                                <li class="text-gray-300 text-lg">
+                                    {{ . }}
                                 </li>
                                 {{ end }}
                             </ul>
@@ -76,11 +70,11 @@
                         {{ if eq .company "GitHub" }}
                         <div class="mt-4">
                             <a href="https://github.com/prxshetty" 
-                               class="inline-flex items-center gap-2 px-4 py-2  text-blue-400 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                               class="github-link inline-flex items-center gap-2 text-gray-400 hover:text-gray-200 transition-colors duration-300 relative">
                                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
-                                View GitHub Profile
+                                <span class="text-sm">@prxshetty</span>
                             </a>
                         </div>
                         {{ end }}
@@ -100,7 +94,7 @@
 <style>
     .prose {
         @apply text-gray-300;
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
     .prose h1 {
         @apply text-4xl font-bold mb-8 text-gray-100;
@@ -111,7 +105,7 @@
     .prose p {
         @apply text-gray-300 mb-6;
         line-height: 1.9;
-        font-size: 1.00rem;
+        font-size: 1.125rem;
     }
     .prose p + p {
         margin-top: 2rem;
@@ -136,9 +130,9 @@
         bottom: -20px;
         left: 50%;
         transform: translateX(-50%);
-        width: 40%;
+        width: 100%;
         height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
     }
     
     .stat-box {
@@ -156,6 +150,27 @@
     
     .stat-label {
         @apply text-sm text-gray-400;
+    }
+    
+    .github-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .github-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .github-link:hover::after {
+        width: 100%;
     }
 </style>
 {{ end }} 
