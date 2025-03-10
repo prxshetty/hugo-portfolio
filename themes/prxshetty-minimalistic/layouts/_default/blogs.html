@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="w-1/2 mx-auto py-12">
-    <h1 class="text-4xl font-bold mb-12">{{ .Title }}</h1>
+<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4 py-12">
+    <h1 class="text-5xl font-bold mb-12">{{ .Title }}</h1>
     
     <div class="space-y-12 max-w-3xl mx-auto">
         {{ range .Site.Params.blogs }}
@@ -12,7 +12,9 @@
             <p class="text-gray-400 mb-4">{{ .summary }}</p>
             <div class="flex flex-wrap gap-2">
                 {{ range .tags }}
-                <span class="text-gray-400 text-sm">#{{ . }}</span>
+                {{ if ne . "" }}
+                <span class="px-2 py-1 text-xs bg-[#121212] text-blue-400 border border-gray-800 rounded-md hover:border-blue-400 transition-all duration-300">#{{ . }}</span>
+                {{ end }}
                 {{ end }}
             </div>
         </div>

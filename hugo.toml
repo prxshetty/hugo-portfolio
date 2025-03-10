@@ -1,6 +1,6 @@
 baseURL = 'https://prxshetty.github.io/hugo-prxshetty/'
 languageCode = 'en-us'
-title = 'Pranam Shetty'
+title = 'Pranam S.'
 theme = 'prxshetty-minimalistic'
 
 # URL handling
@@ -71,11 +71,11 @@ responsibilities = [
     github_username = "prxshetty"
 
 [[params.projects]]
-    title = "Lumi - Agentic Framework"
+    title = "Lumi - Realtime Adaptive Voice Assistant"
     description = "Built in 24 hours at BrickHack 11, Lumi is a real-time voice assistant with 10 custom tools such as script execution, web searches, AI image generation, and more—all controllable by voice with interruption capabilities."
     tech = "Python, Chainlit, Speechmatics Flow, LangChain, SQLite, Grok API, AlphaVantage API, DALL-E"
     image = "/images/projects/lumi.png"
-    link = "https://github.com/ka8540/Brick-Hack11/"
+    link = "https://devpost.com/software/lumi-personal-ai-assistant"
 
 [[params.projects]]
     title = "JobTrail - Web Development"
@@ -134,6 +134,16 @@ responsibilities = [
     link = "https://github.com/prxshetty/mongo-project-eventfulmongoers"
 
 [[params.blogs]]
+    title = "Why AI Still Forgets — And How We’re Fixing It"
+    date = "2025-03-04"
+    summary = "Hey everyone! So, you know how Large Language Models (LLMs) sometimes seem a bit… forgetful?"
+    tags = ["LLM", "", "Speech to Text"]
+    content = """
+    Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
+    """
+    link = "https://medium.com/@prxshetty/why-ai-still-forgets-and-how-were-fixing-it-7d3597f02638"
+
+[[params.blogs]]
     title = "Scribe, the Most Advanced AI Transcription Model Yet"
     date = "2025-03-01"
     summary = "Scribe, ElevenLabs' first Speech to Text model, is the world's most accurate transcription model."
@@ -142,7 +152,6 @@ responsibilities = [
     Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
     """
     link = "https://medium.com/@prxshetty/scribe-the-most-advanced-ai-transcription-model-yet-d5cd7f96368d"
-    image = "/images/blogs/scribe.webp"
 
 [[params.blogs]]
     title = "Grok 3: The AI That Could Challenge DeepSeek and OpenAI's Best"
@@ -153,7 +162,6 @@ responsibilities = [
     On X (formerly Twitter), Elon Musk revealed Grok 3's impressive capabilities. Could this be the next major contender in AI?
     """
     link = "https://medium.com/@prxshetty/grok-3-the-ai-that-could-challenge-deepseek-and-openais-best-e20b3f8ad5e2"
-    image = "/images/blogs/grok3.webp"
 
 [[params.blogs]]
     title = "Want to Master Open-Source LLMs in 2025? Start with DeepSeek V3"
@@ -164,7 +172,6 @@ responsibilities = [
     Meet DeepSeek V3 — the AI powerhouse that's turning heads in Silicon Valley with its massive scale and innovative features...
     """
     link = "https://medium.com/@prxshetty/want-to-master-open-source-llms-in-2025-start-with-deepseek-v3-f485d45a6387"
-    image = "/images/blogs/deepseek.webp"
 
 [[params.blogs]]
     title = "AI Benchmarks: Are we measuring the right thing?"
@@ -175,7 +182,6 @@ responsibilities = [
     What if the metrics we rely on to evaluate AI models are flawed? This article explores the limitations of current benchmarking methods...
     """
     link = "https://medium.com/@prxshetty/ai-benchmarks-are-we-measuring-the-right-thing-1b601fcc0e4e"
-    image = "/images/blogs/benchmark.webp"
 
 [[params.blogs]]
     title = "Forget SQL Headaches: Learn How to Convert Schemas to a Graph Database Today"
@@ -186,7 +192,6 @@ responsibilities = [
     Transitioning from SQL to a graph database can be daunting. Here's a simple guide to make the process smooth and efficient...
     """
     link = "https://medium.com/@prxshetty/forget-sql-headaches-learn-how-to-convert-schemas-to-a-graph-database-today-b78c144716ec"
-    image = "/images/blogs/graphql.webp"
 
 [[params.blogs]]
     title = "Claude can now use computers..."
@@ -197,7 +202,6 @@ responsibilities = [
     What if your AI assistant could navigate a computer like you? With its latest update, Claude 3.5 Sonnet takes AI assistance to the next level...
     """
     link = "https://medium.com/@prxshetty/claude-can-now-use-computers-9b056d1e0e8b"
-    image = "/images/blogs/computeruse.png"
 
 [[params.blogs]]
     title = "Survey of Activation Functions and Initialization Methods"
@@ -208,7 +212,6 @@ responsibilities = [
     Kicking off a new research series, this article breaks down activation functions and their impact on training stability...
     """
     link = "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16"
-    image = "/images/blogs/research-01.png"
 
 [[params.voluntary]]
 role = "Volunteer"
