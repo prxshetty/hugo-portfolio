@@ -80,14 +80,14 @@ responsibilities = [
 [[params.projects]]
     title = "JobTrail - Web Development"
     description = "Job Trail is a Chrome extension that automatically categorizes Gmail emails related to job applications based on their content."
-    tech = "Next.js, React, TypeScript, Tailwind CSS, Google Fonts"
+    tech = "JavaScript, Gmail API, TypeScript, OpenAI API, Google Cloud Platform"
     image = "/images/projects/jobtrail.png"
     link = "https://github.com/prxshetty/jobtrail"
 
 [[params.projects]]
     title = "Depth Segmentation - Computer Vision"
     description = "Trying out Intel's MiDaS Model with greyscale and Upscaler for better results."
-    tech = "MiDaS, PyTorch, Scikit-image, CUDA"
+    tech = "MiDaS, PyTorch, Scikit-image, Intel"
     image = "/images/projects/depth-seg.png"
     link = "https://github.com/prxshetty/midas-depthseg"
 
