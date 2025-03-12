@@ -76,15 +76,10 @@ Update the following in `config.toml`:
 
 Feel free to submit issues and enhancement requests!
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Contact
-
 For template inquiries or support:
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- Twitter: [@yourusername](https://twitter.com/yourusername)
+- Email: [prxshetty@gmail.com](mailto:prxshetty@gmail.com)
+- Twitter: [@prxshetty](https://twitter.com/prxshetty)
 
 ---
 Built with ❤️ using Hugo
