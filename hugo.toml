@@ -24,6 +24,9 @@ twitter = "https://www.twitter.com/prxshetty"
 medium = "https://www.medium.com/@prxshetty"
 linkedin = "https://www.linkedin.com/in/prxshetty"
 instagram = "https://instagram.com/prxshetty"
+leetcode = "https://leetcode.com/rinzler26"
+monkeytype = "https://monkeytype.com/profile/prxshetty"
+kaggle = "https://www.kaggle.com/prxshetty"
 
 [[params.experience]]
 company = "Marva.ai"
