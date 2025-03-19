@@ -74,6 +74,13 @@ responsibilities = [
     github_username = "prxshetty"
 
 [[params.projects]]
+    title = "Emergency Travel Response System"
+    description = "A sophisticated multi-agent system leveraging LangGraph's Swarm architecture, LangSmith and OpenAI to coordinate emergency travel assistance through specialized AI agents. Features multi-agent collaboration, real-time monitoring and modular architecture."
+    tech = "Python, LangChain, LangSmith, LangGraph, OpenAI API"
+    image = "/images/projects/swarm_lang2.png"
+    link = "https://github.com/prxshetty/emergency-travel-orchestrator"
+
+[[params.projects]]
     title = "Lumi - Realtime Adaptive Voice Assistant"
     description = "Built in 24 hours at BrickHack 11, Lumi is a real-time voice assistant with 10 custom tools such as script execution, web searches, AI image generation, and more—all controllable by voice with interruption capabilities."
     tech = "Python, Chainlit, Speechmatics Flow, LangChain, SQLite, Grok API, AlphaVantage API, DALL-E"
@@ -135,6 +142,16 @@ responsibilities = [
     tech = "Python, Flask, Node.js, MongoDB, Mapbox"
     image = "/images/projects/nyc_parks.jpg"
     link = "https://github.com/prxshetty/mongo-project-eventfulmongoers"
+
+[[params.blogs]]
+    title = "How I built a Swarm of AI Agents with LangChain"
+    date = "2025-03-18"
+    summary = "This blog explains in detail how I built my project during the weekend (which you can too!), an Emergency Travel Response System."
+    tags = ["LangChain", "LangGraph", "LangSmith", "OpenAI" ]
+    content = """
+    The emergency response process starts when a user provides input describing their emergency situation. This input could be a text message, voice input, or any other form of communication.
+    """
+    link = "https://medium.com/@prxshetty/how-i-built-a-swarm-of-ai-agents-with-langchain-2e0916ce0d38"
 
 [[params.blogs]]
     title = "Why AI Still Forgets — And How We're Fixing It"
