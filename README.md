@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A modern, minimalist portfolio website built with Hugo, featuring a dark/light theme toggle and responsive design.
+A modern, minimalist portfolio website built with Hugo, featuring a dark theme and responsive design.
 
 ## Features
 
