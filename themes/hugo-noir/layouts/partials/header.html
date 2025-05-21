@@ -22,11 +22,11 @@
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div class="flex justify-between items-center">
-                <a href="{{ .Site.BaseURL }}" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
+                <a href="{{ .Site.BaseURL }}" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
                     {{ site.Params.name }}
                 </a>
                 <!-- Hamburger menu button for mobile -->
-                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -34,44 +34,62 @@
             </div>            
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                <!-- <a href="{{ .Site.BaseURL }}" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if .IsHome }}text-white font-semibold{{ end }}">Home</a> -->
-                <a href="{{ .Site.BaseURL }}about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-white font-semibold{{ end }}">About</a>
-                <a href="{{ .Site.BaseURL }}experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-white font-semibold{{ end }}">Experience</a>
-                <a href="{{ .Site.BaseURL }}projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-white font-semibold{{ end }}">Projects</a>
-                <a href="{{ .Site.BaseURL }}blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-white font-semibold{{ end }}">Blog</a>
-                <a href="{{ .Site.BaseURL }}contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-white font-semibold{{ end }}">Contact</a>
+                <!-- <a href="{{ .Site.BaseURL }}" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if .IsHome }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Home</a> -->
+                <a href="{{ .Site.BaseURL }}about/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">About</a>
+                <a href="{{ .Site.BaseURL }}experience/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Experience</a>
+                <a href="{{ .Site.BaseURL }}projects/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Projects</a>
+                <a href="{{ .Site.BaseURL }}blogs/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Blog</a>
+                <a href="{{ .Site.BaseURL }}contact/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Contact</a>
+                <button id="theme-toggle-button-desktop" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 p-2 rounded-md">
+                  <svg id="theme-toggle-dark-icon-desktop" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                    <path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg id="theme-toggle-light-icon-desktop" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+                  </svg>
+                  <span class="sr-only">Toggle Theme</span>
+                </button>
             </nav>
             <div class="hidden md:flex justify-end">
                 <div class="flex items-center">
-                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
-                    <div id="local-time" class="text-lg text-gray-300"></div>
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
+                    <div id="local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Mobile Navigation Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden transition-all duration-300">
+    <div id="mobile-menu" class="fixed inset-0 bg-bg-primary-light/90 dark:bg-bg-primary-dark/90 z-50 hidden transition-all duration-300">
         <div class="flex flex-col h-full">
-            <div class="flex justify-between items-center p-6 border-b border-gray-800">
-                <span class="text-xl font-bold text-white">Menu</span>
-                <button id="mobile-menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+            <div class="flex justify-between items-center p-6 border-b border-border-primary-light dark:border-border-primary-dark">
+                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">Menu</span>
+                <button id="mobile-menu-close" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
             <nav class="flex flex-col p-6 space-y-4">
-                <a href="{{ .Site.BaseURL }}about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-white font-semibold{{ end }}">About</a>
-                <a href="{{ .Site.BaseURL }}experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-white font-semibold{{ end }}">Experience</a>
-                <a href="{{ .Site.BaseURL }}projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-white font-semibold{{ end }}">Projects</a>
-                <a href="{{ .Site.BaseURL }}blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-white font-semibold{{ end }}">Blog</a>
-                <a href="{{ .Site.BaseURL }}contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-white font-semibold{{ end }}">Contact</a>
+                <a href="{{ .Site.BaseURL }}about/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">About</a>
+                <a href="{{ .Site.BaseURL }}experience/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Experience</a>
+                <a href="{{ .Site.BaseURL }}projects/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Projects</a>
+                <a href="{{ .Site.BaseURL }}blogs/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Blog</a>
+                <a href="{{ .Site.BaseURL }}contact/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Contact</a>
+                <button id="theme-toggle-button-mobile" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 w-full text-left flex items-center p-2 rounded-md">
+                  <svg id="theme-toggle-dark-icon-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2">
+                    <path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg id="theme-toggle-light-icon-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 mr-2 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+                  </svg>
+                  <span class="sr-only">Toggle Theme</span>
+                </button>
             </nav>
-            <div class="mt-auto p-6 border-t border-gray-800">
+            <div class="mt-auto p-6 border-t border-border-primary-light dark:border-border-primary-dark">
                 <div class="flex items-center justify-center">
-                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
-                    <div id="mobile-local-time" class="text-lg text-gray-300"></div>
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
             </div>
         </div>
@@ -120,41 +138,71 @@
         });
     });
 
-    // Only try to access theme toggle elements if they exist
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    if (themeToggleBtn) {
-        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    // Theme toggle functionality
+    const themeToggleBtnDesktop = document.getElementById('theme-toggle-button-desktop');
+    const themeToggleDarkIconDesktop = document.getElementById('theme-toggle-dark-icon-desktop');
+    const themeToggleLightIconDesktop = document.getElementById('theme-toggle-light-icon-desktop');
 
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            themeToggleLightIcon.classList.remove('hidden');
-            themeToggleDarkIcon.classList.add('hidden');
-        } else {
-            themeToggleLightIcon.classList.add('hidden');
-            themeToggleDarkIcon.classList.remove('hidden');
-        }
+    const themeToggleBtnMobile = document.getElementById('theme-toggle-button-mobile');
+    const themeToggleDarkIconMobile = document.getElementById('theme-toggle-dark-icon-mobile');
+    const themeToggleLightIconMobile = document.getElementById('theme-toggle-light-icon-mobile');
 
-        themeToggleBtn.addEventListener('click', function() {
-            themeToggleDarkIcon.classList.toggle('hidden');
-            themeToggleLightIcon.classList.toggle('hidden');
-
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
+    // Function to update icons based on theme
+    function updateIcons(isDarkMode) {
+        if (themeToggleDarkIconDesktop && themeToggleLightIconDesktop) {
+            if (isDarkMode) {
+                themeToggleLightIconDesktop.classList.remove('hidden');
+                themeToggleDarkIconDesktop.classList.add('hidden');
             } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
+                themeToggleLightIconDesktop.classList.add('hidden');
+                themeToggleDarkIconDesktop.classList.remove('hidden');
             }
-        });
+        }
+        if (themeToggleDarkIconMobile && themeToggleLightIconMobile) {
+            if (isDarkMode) {
+                themeToggleLightIconMobile.classList.remove('hidden');
+                themeToggleDarkIconMobile.classList.add('hidden');
+            } else {
+                themeToggleLightIconMobile.classList.add('hidden');
+                themeToggleDarkIconMobile.classList.remove('hidden');
+            }
+        }
+    }
+
+    // Function to set the theme (dark or light)
+    function applyTheme(isDarkMode) {
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+        updateIcons(isDarkMode);
+    }
+
+    // Initialize theme based on localStorage or prefers-color-scheme
+    let initialIsDarkMode = false;
+    if (localStorage.getItem('color-theme') === 'dark' || 
+        (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        initialIsDarkMode = true;
+    }
+    // Apply the initial theme. If it's dark, add the class to <html> immediately to prevent FOUC.
+    if (initialIsDarkMode && !document.documentElement.classList.contains('dark')) {
+         document.documentElement.classList.add('dark');
+    }
+    applyTheme(initialIsDarkMode); // This will set localStorage, icons, and ensure class is correct.
+
+    // Event listener for theme toggle buttons
+    function themeToggleClickHandler() {
+        const isCurrentlyDark = document.documentElement.classList.contains('dark');
+        applyTheme(!isCurrentlyDark); // Toggle to the opposite theme
+    }
+
+    if (themeToggleBtnDesktop) {
+        themeToggleBtnDesktop.addEventListener('click', themeToggleClickHandler);
+    }
+    if (themeToggleBtnMobile) {
+        themeToggleBtnMobile.addEventListener('click', themeToggleClickHandler);
     }
 </script> 
