@@ -28,7 +28,8 @@
         </div>
     </div>
     <div class="space-y-8">
-        {{ with .Site.Params.experience }}
+        {{ $experienceData := index site.Data .Language.Lang "experience" }}
+        {{ with $experienceData.experience }}
             {{ range . }}
             <div class="group relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-border-secondary-light dark:before:bg-border-secondary-dark before:rounded-full">
                 <div class="absolute -left-1.5 top-0 w-2 h-2 bg-border-secondary-light dark:bg-border-secondary-dark rounded-full"></div>

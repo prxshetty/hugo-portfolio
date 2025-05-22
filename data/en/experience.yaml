@@ -1,0 +1,41 @@
+experience:
+  - company: "Marva.ai"
+    role: "ML Engineer Intern"
+    period: "June 2023 - Aug 2023"
+    country: "India"
+    logo: "/images/company/marva.png"
+    description: "Developed deep learning models for financial stock prediction and real-time data visualization."
+    responsibilities:
+      - "Developed financial stock prediction models integrating advanced deep learning techniques"
+      - "Enhanced buy/sell signal accuracy with hybrid Ichimoku Cloud strategies and refined LSTM models"
+      - "Leveraged FinBERT and LLM-powered sentiment analysis, boosting stock prediction precision by 20%"
+      - "Engineered real-time data visualizations using Plotly, Dash, and Streamlit for optimized insights"
+
+  - company: "Knowledge Solutions"
+    role: "ML Research Intern"
+    period: "Sept 2021 - Nov 2021"
+    country: "India"
+    logo: "/images/company/ksi.png"
+    description: "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
+    responsibilities:
+      - "Designed and deployed a scalable ML pipeline for insurance claim cost prediction"
+      - "Optimized big data processing with PySpark and Dask, reducing computation time by 50%"
+      - "Integrated AutoML for hyperparameter tuning, enhancing model performance"
+      - "Developed interactive dashboards using Power BI and Streamlit for real-time insights"
+
+  - company: "Laugh Out Loud Ventures"
+    role: "SEO Analytics Intern"
+    period: "Feb 2020 - March 2020"
+    country: "India"
+    logo: "/images/company/lol.png"
+    description: "Managed digital advertising strategies to optimize conversions for educational courses."
+    responsibilities:
+      - "Led a sales team in transitioning to digital advertising during the pandemic"
+      - "Optimized Google Ads and Facebook Ads strategies to drive higher conversions for educational courses"
+      - "Utilized Google Analytics and CRM tools to refine targeting and improve campaign performance"
+
+  - company: "GitHub"
+    role: "Open Source Contributor"
+    period: "Jun 2024 - Now"
+    description: "I actively try to contribute to Open Source on my GitHub"
+    github_username: "prxshetty" 

@@ -1,0 +1,41 @@
+experience:
+  - company: "Marva.ai"
+    role: "Becario Ingeniero ML"
+    period: "Junio 2023 - Agosto 2023"
+    country: "India"
+    logo: "/images/company/marva.png"
+    description: "Desarrollé modelos de aprendizaje profundo para la predicción de acciones financieras y visualización de datos en tiempo real."
+    responsibilities:
+      - "Desarrollé modelos de predicción de acciones financieras integrando técnicas avanzadas de aprendizaje profundo"
+      - "Mejoré la precisión de señales de compra/venta con estrategias híbridas de Ichimoku Cloud y modelos LSTM refinados"
+      - "Aproveché FinBERT y análisis de sentimiento impulsado por LLM, aumentando la precisión de predicción de acciones en un 20%"
+      - "Diseñé visualizaciones de datos en tiempo real utilizando Plotly, Dash y Streamlit para obtener información optimizada"
+
+  - company: "Knowledge Solutions"
+    role: "Becario de Investigación ML"
+    period: "Sept 2021 - Nov 2021"
+    country: "India"
+    logo: "/images/company/ksi.png"
+    description: "Construí y optimicé canalizaciones de ML para la predicción de costos de reclamaciones de seguros y procesamiento de big data."
+    responsibilities:
+      - "Diseñé e implementé una canalización escalable de ML para la predicción de costos de reclamaciones de seguros"
+      - "Optimicé el procesamiento de big data con PySpark y Dask, reduciendo el tiempo de cálculo en un 50%"
+      - "Integré AutoML para el ajuste de hiperparámetros, mejorando el rendimiento del modelo"
+      - "Desarrollé paneles interactivos utilizando Power BI y Streamlit para obtener información en tiempo real"
+
+  - company: "Laugh Out Loud Ventures"
+    role: "Becario de Análisis SEO"
+    period: "Feb 2020 - Marzo 2020"
+    country: "India"
+    logo: "/images/company/lol.png"
+    description: "Gestioné estrategias de publicidad digital para optimizar conversiones para cursos educativos."
+    responsibilities:
+      - "Lideré un equipo de ventas en la transición a la publicidad digital durante la pandemia"
+      - "Optimicé estrategias de Google Ads y Facebook Ads para impulsar mayores conversiones para cursos educativos"
+      - "Utilicé Google Analytics y herramientas CRM para refinar la segmentación y mejorar el rendimiento de la campaña"
+
+  - company: "GitHub"
+    role: "Colaborador de Código Abierto"
+    period: "Jun 2024 - Ahora"
+    description: "Intento contribuir activamente al Código Abierto en mi GitHub"
+    github_username: "prxshetty" 

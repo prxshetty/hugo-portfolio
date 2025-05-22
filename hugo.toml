@@ -7,15 +7,98 @@ theme = 'hugo-noir'
 relativeURLs = true
 canonifyURLs = true
 
+# Multilingual configuration
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Pranam Shetty"
+    weight = 1
+    contentDir = "content/en"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Experience"
+        url = "/experience/"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Projects"
+        url = "/projects/"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Blogs"
+        url = "/blogs/"
+        weight = 4
+      [[languages.en.menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 5
+  [languages.es]
+    languageName = "Español"
+    title = "Pranam Shetty"
+    weight = 2
+    contentDir = "content/es"
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        name = "Sobre Mí"
+        url = "/about/"
+        weight = 1
+      [[languages.es.menu.main]]
+        name = "Experiencia"
+        url = "/experience/"
+        weight = 2
+      [[languages.es.menu.main]]
+        name = "Proyectos"
+        url = "/projects/"
+        weight = 3
+      [[languages.es.menu.main]]
+        name = "Blogs"
+        url = "/blogs/"
+        weight = 4
+      [[languages.es.menu.main]]
+        name = "Contacto"
+        url = "/contact/"
+        weight = 5
+  [languages.fr]
+    languageName = "Français"
+    title = "Pranam Shetty"
+    weight = 3
+    contentDir = "content/fr"
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        name = "À Propos"
+        url = "/about/"
+        weight = 1
+      [[languages.fr.menu.main]]
+        name = "Expérience"
+        url = "/experience/"
+        weight = 2
+      [[languages.fr.menu.main]]
+        name = "Projets"
+        url = "/projects/"
+        weight = 3
+      [[languages.fr.menu.main]]
+        name = "Blogs"
+        url = "/blogs/"
+        weight = 4
+      [[languages.fr.menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 5
+
 # Taxonomy configuration
 [taxonomies]
   category = "categories"
   tag = "tags"
 
 [params]
+# Basic profile information - common across languages
 name = "Pranam Shetty"
-location = "Rochester, NY"
-description = "AI Developer. ML Engineer. I finetune models, build scalable pipelines and automate workflows."
 profile_image = "/images/profile.jpg"
 discord = "prxshetty"
 github = "https://github.com/prxshetty"
@@ -62,221 +145,13 @@ company = "Oracle"
 date = "April 2025"
 url = "https://catalog-education.oracle.com/ords/certview/sharebadge?id=FDAC04F9FD0E2793459AAC3EE02DE9131DA3B7B34C20A361CAEFC71059B86EA8"
 
-[[params.experience]]
-company = "Marva.ai"
-role = "ML Engineer Intern"
-period = "June 2023 - Aug 2023"
-country = "India"
-logo = "/images/company/marva.png"
-description = "Developed deep learning models for financial stock prediction and real-time data visualization."
-responsibilities = [
-    "Developed financial stock prediction models integrating advanced deep learning techniques",
-    "Enhanced buy/sell signal accuracy with hybrid Ichimoku Cloud strategies and refined LSTM models",
-    "Leveraged FinBERT and LLM-powered sentiment analysis, boosting stock prediction precision by 20%",
-    "Engineered real-time data visualizations using Plotly, Dash, and Streamlit for optimized insights"
-]
-
-[[params.experience]]
-company = "Knowledge Solutions"
-role = "ML Research Intern"
-period = "Sept 2021 - Nov 2021"
-country = "India"
-logo = "/images/company/ksi.png"
-description = "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
-responsibilities = [
-    "Designed and deployed a scalable ML pipeline for insurance claim cost prediction",
-    "Optimized big data processing with PySpark and Dask, reducing computation time by 50%",
-    "Integrated AutoML for hyperparameter tuning, enhancing model performance",
-    "Developed interactive dashboards using Power BI and Streamlit for real-time insights"
-]
-
-[[params.experience]]
-company = "Laugh Out Loud Ventures"
-role = "SEO Analytics Intern"
-period = "Feb 2020 - March 2020"
-country = "India"
-logo = "/images/company/lol.png"
-description = "Managed digital advertising strategies to optimize conversions for educational courses."
-responsibilities = [
-    "Led a sales team in transitioning to digital advertising during the pandemic",
-    "Optimized Google Ads and Facebook Ads strategies to drive higher conversions for educational courses",
-    "Utilized Google Analytics and CRM tools to refine targeting and improve campaign performance"
-]
-
-[[params.experience]]
-    company = "GitHub"
-    role = "Open Source Contributor"
-    period = "Jun 2024 - Now"
-    description = "I actively try to contribute to Open Source on my GitHub"
-    github_username = "prxshetty"
-
-[[params.projects]]
-    title = "Emergency Travel Response System"
-    description = "A sophisticated multi-agent system leveraging LangGraph's Swarm architecture, LangSmith and OpenAI to coordinate emergency travel assistance through specialized AI agents. Features multi-agent collaboration, real-time monitoring and modular architecture."
-    tech = "Python, LangChain, LangSmith, LangGraph, OpenAI API"
-    image = "/images/projects/swarm_lang2.png"
-    link = "https://github.com/prxshetty/emergency-travel-orchestrator"
-
-[[params.projects]]
-    title = "Lumi - Realtime Adaptive Voice Assistant"
-    description = "Built in 24 hours at BrickHack 11, Lumi is a real-time voice assistant with 10 custom tools such as script execution, web searches, AI image generation, and more—all controllable by voice with interruption capabilities."
-    tech = "Python, Chainlit, Speechmatics Flow, LangChain, SQLite, Grok API, AlphaVantage API, DALL-E"
-    image = "/images/projects/lumi.png"
-    link = "https://devpost.com/software/lumi-personal-ai-assistant"
-
-[[params.projects]]
-    title = "JobTrail - Web Development"
-    description = "Job Trail is a Chrome extension that automatically categorizes Gmail emails related to job applications based on their content."
-    tech = "JavaScript, Gmail API, TypeScript, OpenAI API, Google Cloud Platform"
-    image = "/images/projects/jobtrail.png"
-    link = "https://github.com/prxshetty/jobtrail"
-
-[[params.projects]]
-    title = "Depth Segmentation - Computer Vision"
-    description = "Trying out Intel's MiDaS Model with greyscale and Upscaler for better results."
-    tech = "MiDaS, PyTorch, Scikit-image, Intel"
-    image = "/images/projects/depth-seg.png"
-    link = "https://github.com/prxshetty/midas-depthseg"
-
-[[params.projects]]
-    title = "Resume Chatbot - Natural Language Processing"
-    description = "LLM Chatbot using Supabase for vectorStore, OpenAI API for embeddings with adjusted chunk size and overlaps for Resumes."
-    tech = "Python, OpenAI API, Supabase, LangChain"
-    image = "/images/projects/llm-chatbot.png"
-    link = "https://github.com/prxshetty/resume-chatbot"
-
-[[params.projects]]
-    title = "Large Language Model - Deep Learning"
-    description = "A machine learning project to build a large language model from scratch, inspired by Karpathy's nn."
-    tech = "Python, PyTorch, Neural Networks, Statistics"
-    image = "/images/projects/llm-scratch.jpg"
-    link = "https://github.com/prxshetty/karpathy-nn"
-
-[[params.projects]]
-    title = "AutoMail AI - Natural Language Processing"
-    description = "An AI-powered email automation system using NLP, DocTran, API."
-    tech = "Python, NLP, TensorFlow, Flask, OpenAI API, DocTran"
-    image = "/images/projects/automail_ai.png"
-    link = "https://github.com/prxshetty/automail-ai"
-
-[[params.projects]]
-    title = "Image Enhancement with OpenCV DNN - Computer Vision"
-    description = "Mini Python code for image super resolution using DNN in OpenCV, trying out LapSRN and EDSR."
-    tech = "Python, OpenCV, CUDA"
-    image = "/images/projects/image_enhance.png"
-    link = "https://github.com/prxshetty/Super-Resolution"
-
-[[params.projects]]
-    title = "NBA Influence Predictor - Data Analysis"
-    description = "Python & R project predicting NBA player & team valuations based on various factors."
-    tech = "Python, R, pandas, statsmodels, matplotlib"
-    image = "/images/projects/nba_predictor.png"
-    link = "https://github.com/prxshetty/NBAInfluencePredictor"
-
-[[params.projects]]
-    title = "NYC Parks Eventful Mongoers - Web Development"
-    description = "Web app that discovers NYC Parks events via text & map search using Python, Flask, Node.js, and MongoDB."
-    tech = "Python, Flask, Node.js, MongoDB, Mapbox"
-    image = "/images/projects/nyc_parks.jpg"
-    link = "https://github.com/prxshetty/mongo-project-eventfulmongoers"
-
-[[params.blogs]]
-    title = "How I built a Swarm of AI Agents with LangChain"
-    date = "2025-03-18"
-    summary = "This blog explains in detail how I built my project during the weekend (which you can too!), an Emergency Travel Response System."
-    tags = ["LangChain", "LangGraph", "LangSmith", "OpenAI" ]
-    content = """
-    The emergency response process starts when a user provides input describing their emergency situation. This input could be a text message, voice input, or any other form of communication.
-    """
-    link = "https://medium.com/@prxshetty/how-i-built-a-swarm-of-ai-agents-with-langchain-2e0916ce0d38"
-
-[[params.blogs]]
-    title = "Why AI Still Forgets — And How We're Fixing It"
-    date = "2025-03-04"
-    summary = "Hey everyone! So, you know how Large Language Models (LLMs) sometimes seem a bit… forgetful?"
-    tags = ["LLM", "Research", "architecture" ]
-    content = """
-    Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
-    """
-    link = "https://medium.com/@prxshetty/why-ai-still-forgets-and-how-were-fixing-it-7d3597f02638"
-
-[[params.blogs]]
-    title = "Scribe, the Most Advanced AI Transcription Model Yet"
-    date = "2025-03-01"
-    summary = "Scribe, ElevenLabs' first Speech to Text model, is the world's most accurate transcription model."
-    tags = ["AI", "Transcription", "Speech to Text"]
-    content = """
-    Scribe, ElevenLabs' breakthrough AI transcription model, sets a new benchmark in accuracy and efficiency for speech-to-text technology...
-    """
-    link = "https://medium.com/@prxshetty/scribe-the-most-advanced-ai-transcription-model-yet-d5cd7f96368d"
-
-[[params.blogs]]
-    title = "Grok 3: The AI That Could Challenge DeepSeek and OpenAI's Best"
-    date = "2025-02-18"
-    summary = "Elon Musk and his team showcased Grok 3, an AI model with state-of-the-art reasoning and problem-solving skills."
-    tags = ["AI", "Grok 3", "OpenAI"]
-    content = """
-    On X (formerly Twitter), Elon Musk revealed Grok 3's impressive capabilities. Could this be the next major contender in AI?
-    """
-    link = "https://medium.com/@prxshetty/grok-3-the-ai-that-could-challenge-deepseek-and-openais-best-e20b3f8ad5e2"
-
-[[params.blogs]]
-    title = "Want to Master Open-Source LLMs in 2025? Start with DeepSeek V3"
-    date = "2025-01-05"
-    summary = "DeepSeek V3 is making waves in AI with its 671B parameters and groundbreaking architecture."
-    tags = ["LLMs", "AI", "Deep Learning"]
-    content = """
-    Meet DeepSeek V3 — the AI powerhouse that's turning heads in Silicon Valley with its massive scale and innovative features...
-    """
-    link = "https://medium.com/@prxshetty/want-to-master-open-source-llms-in-2025-start-with-deepseek-v3-f485d45a6387"
-
-[[params.blogs]]
-    title = "AI Benchmarks: Are we measuring the right thing?"
-    date = "2025-01-01"
-    summary = "Are AI benchmarks truly representative of real-world performance, or are they misleading our understanding?"
-    tags = ["AI", "Benchmarks", "Machine Learning"]
-    content = """
-    What if the metrics we rely on to evaluate AI models are flawed? This article explores the limitations of current benchmarking methods...
-    """
-    link = "https://medium.com/@prxshetty/ai-benchmarks-are-we-measuring-the-right-thing-1b601fcc0e4e"
-
-[[params.blogs]]
-    title = "Forget SQL Headaches: Learn How to Convert Schemas"
-    date = "2024-12-04"
-    summary = "A step-by-step guide to transitioning from relational databases to graph databases for better performance and scalability."
-    tags = ["Databases", "GraphQL", "SQL"]
-    content = """
-    Transitioning from SQL to a graph database can be daunting. Here's a simple guide to make the process smooth and efficient...
-    """
-    link = "https://medium.com/@prxshetty/forget-sql-headaches-learn-how-to-convert-schemas-to-a-graph-database-today-b78c144716ec"
-
-[[params.blogs]]
-    title = "Claude can now use computers..."
-    date = "2024-12-03"
-    summary = "Anthropic's Claude 3.5 Sonnet AI now interacts with computers just like humans."
-    tags = ["AI", "Claude", "Anthropic"]
-    content = """
-    What if your AI assistant could navigate a computer like you? With its latest update, Claude 3.5 Sonnet takes AI assistance to the next level...
-    """
-    link = "https://medium.com/@prxshetty/claude-can-now-use-computers-9b056d1e0e8b"
-
-[[params.blogs]]
-    title = "Survey of Activation Functions and Initialization Methods"
-    date = "2024-09-09"
-    summary = "A research-backed exploration of activation functions and initialization techniques in deep learning."
-    tags = ["Deep Learning", "Neural Networks", "AI Research"]
-    content = """
-    Kicking off a new research series, this article breaks down activation functions and their impact on training stability...
-    """
-    link = "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16"
-
 [[params.voluntary]]
 role = "Volunteer"
 organization = "Bunts Sangha"
 period = "2009 - Present"
 description = "As a volunteer at Bunts Sangha Nashik, I tutored students, prepared study materials, organized festivals and traditional performances, visited elderly to promote community unity, and coordinated fundraising campaigns."
 
-
+# Main menu (used as fallback if language-specific menu is not defined)
 [menu]
   [[menu.main]]
     name = "About"

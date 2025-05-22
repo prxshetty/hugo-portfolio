@@ -1,0 +1,63 @@
+blogs:
+  - title: "Cómo construí un Enjambre de Agentes de IA con LangChain"
+    date: "2025-03-18"
+    summary: "Este blog explica en detalle cómo construí mi proyecto durante el fin de semana (¡que tú también puedes hacer!), un Sistema de Respuesta a Emergencias de Viaje."
+    tags: ["LangChain", "LangGraph", "LangSmith", "OpenAI"]
+    content: "El proceso de respuesta a emergencias comienza cuando un usuario proporciona información describiendo su situación de emergencia. Esta entrada podría ser un mensaje de texto, entrada de voz o cualquier otra forma de comunicación."
+    link: "https://medium.com/@prxshetty/how-i-built-a-swarm-of-ai-agents-with-langchain-2e0916ce0d38"
+
+  - title: "Por qué la IA todavía olvida — Y cómo lo estamos solucionando"
+    date: "2025-03-04"
+    summary: "¡Hola a todos! Entonces, ¿sabes cómo los Modelos de Lenguaje Grande (LLMs) a veces parecen un poco... olvidadizos?"
+    tags: ["LLM", "Investigación", "arquitectura"]
+    content: "Scribe, el revolucionario modelo de transcripción de IA de ElevenLabs, establece un nuevo punto de referencia en precisión y eficiencia para la tecnología de voz a texto..."
+    link: "https://medium.com/@prxshetty/why-ai-still-forgets-and-how-were-fixing-it-7d3597f02638"
+
+  - title: "Scribe, el Modelo de Transcripción de IA más Avanzado hasta ahora"
+    date: "2025-03-01"
+    summary: "Scribe, el primer modelo de Voz a Texto de ElevenLabs, es el modelo de transcripción más preciso del mundo."
+    tags: ["IA", "Transcripción", "Voz a Texto"]
+    content: "Scribe, el revolucionario modelo de transcripción de IA de ElevenLabs, establece un nuevo punto de referencia en precisión y eficiencia para la tecnología de voz a texto..."
+    link: "https://medium.com/@prxshetty/scribe-the-most-advanced-ai-transcription-model-yet-d5cd7f96368d"
+
+  - title: "Grok 3: La IA que podría desafiar a DeepSeek y lo mejor de OpenAI"
+    date: "2025-02-18"
+    summary: "Elon Musk y su equipo mostraron Grok 3, un modelo de IA con habilidades de razonamiento y resolución de problemas de vanguardia."
+    tags: ["IA", "Grok 3", "OpenAI"]
+    content: "En X (anteriormente Twitter), Elon Musk reveló las impresionantes capacidades de Grok 3. ¿Podría este ser el próximo gran competidor en IA?"
+    link: "https://medium.com/@prxshetty/grok-3-the-ai-that-could-challenge-deepseek-and-openais-best-e20b3f8ad5e2"
+
+  - title: "¿Quieres dominar los LLMs de código abierto en 2025? Comienza con DeepSeek V3"
+    date: "2025-01-05"
+    summary: "DeepSeek V3 está causando revuelo en la IA con sus 671B parámetros y arquitectura revolucionaria."
+    tags: ["LLMs", "IA", "Aprendizaje Profundo"]
+    content: "Conoce DeepSeek V3 — la potencia de IA que está captando la atención en Silicon Valley con su escala masiva y características innovadoras..."
+    link: "https://medium.com/@prxshetty/want-to-master-open-source-llms-in-2025-start-with-deepseek-v3-f485d45a6387"
+
+  - title: "Benchmarks de IA: ¿Estamos midiendo lo correcto?"
+    date: "2025-01-01"
+    summary: "¿Son los benchmarks de IA verdaderamente representativos del rendimiento en el mundo real, o están distorsionando nuestra comprensión?"
+    tags: ["IA", "Benchmarks", "Aprendizaje Automático"]
+    content: "¿Y si las métricas en las que confiamos para evaluar modelos de IA son defectuosas? Este artículo explora las limitaciones de los métodos actuales de benchmarking..."
+    link: "https://medium.com/@prxshetty/ai-benchmarks-are-we-measuring-the-right-thing-1b601fcc0e4e"
+
+  - title: "Olvídate de los dolores de cabeza de SQL: Aprende a convertir esquemas"
+    date: "2024-12-04"
+    summary: "Una guía paso a paso para la transición de bases de datos relacionales a bases de datos de grafos para un mejor rendimiento y escalabilidad."
+    tags: ["Bases de datos", "GraphQL", "SQL"]
+    content: "La transición de SQL a una base de datos de grafos puede ser desalentadora. Aquí hay una guía simple para hacer que el proceso sea fluido y eficiente..."
+    link: "https://medium.com/@prxshetty/forget-sql-headaches-learn-how-to-convert-schemas-to-a-graph-database-today-b78c144716ec"
+
+  - title: "Claude ahora puede usar computadoras..."
+    date: "2024-12-03"
+    summary: "La IA Claude 3.5 Sonnet de Anthropic ahora interactúa con computadoras al igual que los humanos."
+    tags: ["IA", "Claude", "Anthropic"]
+    content: "¿Y si tu asistente de IA pudiera navegar por una computadora como tú? Con su última actualización, Claude 3.5 Sonnet lleva la asistencia de IA al siguiente nivel..."
+    link: "https://medium.com/@prxshetty/claude-can-now-use-computers-9b056d1e0e8b"
+
+  - title: "Encuesta de Funciones de Activación y Métodos de Inicialización"
+    date: "2024-09-09"
+    summary: "Una exploración respaldada por investigación de funciones de activación y técnicas de inicialización en aprendizaje profundo."
+    tags: ["Aprendizaje Profundo", "Redes Neuronales", "Investigación de IA"]
+    content: "Iniciando una nueva serie de investigación, este artículo desglosa las funciones de activación y su impacto en la estabilidad del entrenamiento..."
+    link: "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16" 
