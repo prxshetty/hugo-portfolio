@@ -1,5 +1,6 @@
 experience:
   - company: "GoodFin"
+    company_link: "https://www.goodfin.com"
     role: "Pasante de Ingeniero de IA"
     period: "Ene 2024 - Actualidad"
     country: "Estados Unidos"
@@ -11,6 +12,7 @@ experience:
       - "Gestioné flujos de trabajo completos de datos de investigación, desde el procesamiento y limpieza de extensos conjuntos de datos JSON de benchmarks de LLMs hasta la creación de visualizaciones e informes perspicaces."
 
   - company: "Marva.ai"
+    company_link: "https://ai.marva.in/"
     role: "Becario Ingeniero ML"
     period: "Junio 2023 - Agosto 2023"
     country: "India"
@@ -23,6 +25,7 @@ experience:
       - "Diseñé visualizaciones de datos en tiempo real utilizando Plotly, Dash y Streamlit para obtener información optimizada"
 
   - company: "Knowledge Solutions"
+    company_link: ""
     role: "Becario de Investigación ML"
     period: "Sept 2021 - Nov 2021"
     country: "India"
@@ -35,6 +38,7 @@ experience:
       - "Desarrollé paneles interactivos utilizando Power BI y Streamlit para obtener información en tiempo real"
 
   - company: "Laugh Out Loud Ventures"
+    company_link: ""
     role: "Becario de Análisis SEO"
     period: "Feb 2020 - Marzo 2020"
     country: "India"
@@ -46,6 +50,7 @@ experience:
       - "Utilicé Google Analytics y herramientas CRM para refinar la segmentación y mejorar el rendimiento de la campaña"
 
   - company: "GitHub"
+    company_link: "https://github.com"
     role: "Colaborador de Código Abierto"
     period: "Jun 2024 - Ahora"
     description: "Intento contribuir activamente al Código Abierto en mi GitHub"
