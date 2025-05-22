@@ -1,7 +1,7 @@
 baseURL = "https://pranamshetty.dev"
 languageCode = 'en-us'
 title = 'Pranam Shetty'
-theme = 'prxshetty-minimalistic'
+theme = 'hugo-noir'
 
 # URL handling
 relativeURLs = true
@@ -238,7 +238,7 @@ responsibilities = [
     link = "https://medium.com/@prxshetty/ai-benchmarks-are-we-measuring-the-right-thing-1b601fcc0e4e"
 
 [[params.blogs]]
-    title = "Forget SQL Headaches: Learn How to Convert Schemas to a Graph Database Today"
+    title = "Forget SQL Headaches: Learn How to Convert Schemas"
     date = "2024-12-04"
     summary = "A step-by-step guide to transitioning from relational databases to graph databases for better performance and scalability."
     tags = ["Databases", "GraphQL", "SQL"]

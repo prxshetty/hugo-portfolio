@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="max-w-4xl mx-auto px-4 py-12">
     <h1 class="text-5xl font-bold mb-3 text-text-primary-light dark:text-text-primary-dark">{{ .Title }}</h1>
-    <div class="mb-12 bg-neutral-100 dark:bg-neutral-800 p-8 rounded-lg">
+    <div class="mb-12 bg-bg-primary-light dark:bg-bg-secondary-dark p-8 rounded-lg border border-border-primary-light dark:border-border-primary-dark">
         <div class="intro-section">
             <div class="text-text-secondary-light dark:text-text-secondary-dark text-3xl prose prose-invert prose-l max-w-none">
                 {{ .Content }}
@@ -32,7 +32,7 @@
             {{ range . }}
             <div class="group relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-border-secondary-light dark:before:bg-border-secondary-dark before:rounded-full">
                 <div class="absolute -left-1.5 top-0 w-2 h-2 bg-border-secondary-light dark:bg-border-secondary-dark rounded-full"></div>
-                <div class="p-6 rounded-lg bg-bg-primary-light dark:bg-neutral-850 transition-all duration-300">
+                <div class="p-6 rounded-lg bg-bg-primary-light dark:bg-bg-secondary-dark transition-all duration-300 border border-border-primary-light dark:border-border-primary-dark">
                     <div class="flex-grow">
                         {{ if .company }}
                             <div class="text-text-secondary-light dark:text-text-secondary-dark text-xl">{{ .company }}</div>
@@ -63,7 +63,7 @@
                         {{ if .technologies }}
                         <div class="mt-4 flex flex-wrap gap-2">
                             {{ range .technologies }}
-                            <span class="px-3 py-1 text-sm bg-neutral-200 dark:bg-neutral-700 text-text-secondary-light dark:text-text-secondary-dark rounded-full">{{ . }}</span>
+                            <span class="px-3 py-1 text-sm bg-bg-primary-light dark:bg-bg-tertiary-dark text-text-secondary-light dark:text-text-secondary-dark rounded-full">{{ . }}</span>
                             {{ end }}
                         </div>
                         {{ end }}                        
@@ -83,7 +83,7 @@
             </div>
             {{ end }}
         {{ else }}
-            <div class="text-text-secondary-light dark:text-text-secondary-dark p-6 bg-neutral-100 dark:bg-neutral-800 rounded-lg">
+            <div class="text-text-secondary-light dark:text-text-secondary-dark p-6 bg-bg-primary-light dark:bg-bg-secondary-dark rounded-lg border border-border-primary-light dark:border-border-primary-dark">
                 <p class="text-center">No experience data found. Please add some experience entries to your site configuration.</p>
             </div>
         {{ end }}
@@ -167,16 +167,16 @@
         background: linear-gradient(90deg, transparent, rgba(156, 163, 175, 0.5), transparent); /* border-secondary-light with alpha */
     }
     
-    html.dark .intro-section::after {
+    .intro-section::after {
         background: linear-gradient(90deg, transparent, rgba(107, 114, 128, 0.5), transparent); /* border-secondary-dark with alpha */
     }
 
     .stat-box {
-        @apply bg-neutral-200 dark:bg-neutral-700 p-4 rounded-lg border border-border-primary-light dark:border-border-primary-dark flex-1 min-w-[120px] text-center transition-all duration-300;
+        @apply bg-bg-primary-light dark:bg-bg-tertiary-dark p-4 rounded-lg border border-border-primary-light dark:border-border-primary-dark flex-1 min-w-[120px] text-center transition-all duration-300;
     }
     
     .stat-box:hover {
-        @apply border-accent-light dark:border-accent-dark bg-neutral-300 dark:bg-neutral-600;
+        @apply border-accent-light dark:border-accent-dark bg-bg-primary-light dark:bg-bg-tertiary-dark;
         transform: translateY(-2px);
     }
     

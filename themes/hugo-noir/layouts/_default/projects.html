@@ -4,7 +4,7 @@
     
     <div class="grid grid-cols-1 gap-6 md:gap-8 max-w-3xl mx-auto">
         {{ range .Site.Params.projects }}
-        <div class="project-card relative overflow-hidden rounded-lg bg-bg-secondary-light dark:bg-bg-secondary-dark border border-border-primary-light dark:border-border-primary-dark transition-all duration-300 group">
+        <div class="project-card relative overflow-hidden rounded-lg bg-bg-primary-light dark:bg-bg-secondary-dark border border-border-primary-light dark:border-border-primary-dark transition-all duration-300 group">
             <div class="aspect-w-16 aspect-h-9 overflow-hidden relative">
                 <div class="absolute inset-0 bg-gradient-to-br from-accent-light/20 to-accent-light/20 dark:from-accent-dark/20 dark:to-accent-dark/20 z-10"></div>
                 <img src="{{ .image }}" alt="{{ .title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -12,14 +12,14 @@
                 
                 <!-- Content that moves up on hover -->
                 <div class="absolute inset-0 z-30 p-4 pb-3 md:p-6 md:pb-4 flex flex-col justify-end transform transition-transform duration-500 translate-y-0 group-hover:translate-y-[-20px]">
-                    <h3 class="text-xl md:text-2xl font-bold mb-1.5 md:mb-2 text-white dark:text-text-primary-dark line-clamp-2">{{ .title }}</h3>
+                    <h3 class="text-xl md:text-2xl font-bold mb-1.5 md:mb-2 text-white line-clamp-2">{{ .title }}</h3>
                     <div class="flex flex-wrap gap-1 md:gap-2 mb-1.5 md:mb-3">
                         {{ $techs := split .tech "," }}
                         {{ range $tech := $techs }}
-                        <span class="px-1.5 md:px-2 py-0.5 bg-neutral-700/30 dark:bg-neutral-900/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-text-primary-dark dark:text-text-primary-dark">{{ $tech }}</span>
+                        <span class="px-1.5 md:px-2 py-0.5 bg-neutral-700/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-white">{{ $tech }}</span>
                         {{ end }}
                     </div>
-                    <p class="hidden md:block text-sm text-text-secondary-dark dark:text-text-secondary-dark mb-3 line-clamp-3 md:line-clamp-4">{{ .description }}</p>
+                    <p class="hidden md:block text-sm text-white mb-3 line-clamp-3 md:line-clamp-4">{{ .description }}</p>
                     
                     <!-- Learn More button -->
                     <a href="{{ .link }}" class="bg-accent-light/90 dark:bg-accent-dark/90 backdrop-blur-sm hover:bg-accent-light dark:hover:bg-accent-dark text-neutral-800 dark:text-white text-xs md:text-sm font-medium py-1 md:py-1.5 px-2 md:px-3 rounded-md inline-block transition-all duration-300 transform opacity-100 md:opacity-0 group-hover:opacity-100 w-fit flex items-center shadow-lg hover:shadow-xl">
@@ -42,13 +42,9 @@
     flex-direction: column;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    /* Light mode gradient using neutral-200 (e.g., rgba(229, 231, 235, alpha)) */
-    background: linear-gradient(to bottom right, rgba(229, 231, 235, 0.5), rgba(229, 231, 235, 0.8));
+    /* Use Tailwind theme variables for more modular approach */
+    @apply bg-bg-primary-light dark:bg-bg-secondary-dark;
     backdrop-filter: blur(10px);
-}
-html.dark .project-card {
-    /* Dark mode gradient using slate-800 (original values) */
-    background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8));
 }
 
 .project-card:hover {

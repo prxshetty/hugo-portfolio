@@ -11,8 +11,16 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicon_io/favicon-16x16.png">
         <link rel="manifest" href="{{ .Site.BaseURL }}favicon_io/site.webmanifest">        
         <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
-        
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">        
+        <!-- <style>
+            html.dark {
+                background-color: #121212 !important;
+            }
+            html.dark body {
+                background-color: #121212 !important;
+            }
+        </style>
+         -->
         <!-- issues fix code for FOUC -->
         <style>
             /* FOUC prevention: default to light theme styles */
@@ -22,7 +30,7 @@
             }
             /* If dark mode is enabled by JS (html.dark), apply dark theme styles */
             html.dark, html.dark body {
-                background-color: #111827; /* neutral-900 */
+                background-color: #121212; 
                 color: #f3f4f6; /* neutral-100 */
             }
             .border { /* Default light mode border */
