@@ -53,43 +53,44 @@
                   <svg id="theme-toggle-light-icon-desktop" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 hidden">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
                   </svg>
-                  <span class="sr-only">Toggle Theme</span>
                 </button>
             </div>
         </div>
     </div>
 
     <!-- Mobile Navigation Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-bg-primary-light/90 dark:bg-bg-primary-dark/90 z-50 hidden transition-all duration-300">
+    <div id="mobile-menu" class="fixed inset-0 bg-white dark:bg-[#121212] z-50 hidden transition-all duration-300 backdrop-blur-sm">
         <div class="flex flex-col h-full">
-            <div class="flex justify-between items-center p-6 border-b border-border-primary-light dark:border-border-primary-dark">
-                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">Menu</span>
-                <button id="mobile-menu-close" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
+            <div class="flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-800">
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Menu</span>
+                <div class="flex items-center gap-4">
+                    <button id="theme-toggle-button-mobile" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 flex items-center p-2 rounded-md">
+                      <svg id="theme-toggle-dark-icon-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                        <path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg id="theme-toggle-light-icon-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+                      </svg>
+                    </button>
+                    <button id="mobile-menu-close" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <nav class="flex flex-col p-6 space-y-4">
-                <a href="{{ .Site.BaseURL }}about/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">About</a>
-                <a href="{{ .Site.BaseURL }}experience/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Experience</a>
-                <a href="{{ .Site.BaseURL }}projects/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Projects</a>
-                <a href="{{ .Site.BaseURL }}blogs/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Blog</a>
-                <a href="{{ .Site.BaseURL }}contact/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">Contact</a>
-                <button id="theme-toggle-button-mobile" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 w-full text-left flex items-center p-2 rounded-md">
-                  <svg id="theme-toggle-dark-icon-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2">
-                    <path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <svg id="theme-toggle-light-icon-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 mr-2 hidden">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
-                  </svg>
-                  <span class="sr-only">Toggle Theme</span>
-                </button>
+                <a href="{{ .Site.BaseURL }}" class="text-xl text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 {{ if .IsHome }}text-blue-600 dark:text-blue-400 font-semibold{{ end }}" data-menu-link>Home</a>
+                <a href="{{ .Site.BaseURL }}about/" class="text-xl text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/about/" }}text-blue-600 dark:text-blue-400 font-semibold{{ end }}" data-menu-link>About</a>
+                <a href="{{ .Site.BaseURL }}experience/" class="text-xl text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/experience/" }}text-blue-600 dark:text-blue-400 font-semibold{{ end }}" data-menu-link>Experience</a>
+                <a href="{{ .Site.BaseURL }}projects/" class="text-xl text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/projects/" }}text-blue-600 dark:text-blue-400 font-semibold{{ end }}" data-menu-link>Projects</a>
+                <a href="{{ .Site.BaseURL }}blogs/" class="text-xl text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/blogs/" }}text-blue-600 dark:text-blue-400 font-semibold{{ end }}" data-menu-link>Blog</a>
+                <a href="{{ .Site.BaseURL }}contact/" class="text-xl text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 {{ if eq $currentPage.RelPermalink "/contact/" }}text-blue-600 dark:text-blue-400 font-semibold{{ end }}" data-menu-link>Contact</a>
             </nav>
-            <div class="mt-auto p-6 border-t border-border-primary-light dark:border-border-primary-dark">
+            <div class="mt-auto p-6 border-t border-gray-200 dark:border-gray-800">
                 <div class="flex items-center justify-center">
-                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
-                    <div id="mobile-local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
+                    <span class="text-lg text-gray-600 dark:text-gray-400 mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-gray-700 dark:text-gray-300"></div>
                 </div>
             </div>
         </div>
@@ -115,27 +116,24 @@
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('[data-menu-link]');
 
-    function toggleMobileMenu() {
-        const isHidden = mobileMenu.classList.contains('hidden');
-        if (isHidden) {
-            mobileMenu.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
-        } else {
-            mobileMenu.classList.add('hidden');
-            document.body.style.overflow = ''; // Restore scrolling
-        }
+    function openMobileMenu() {
+        mobileMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
     }
 
-    mobileMenuButton.addEventListener('click', toggleMobileMenu);
-    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+    function closeMobileMenu() {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
 
     // Close menu when clicking on a link
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            toggleMobileMenu();
-        });
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
     });
 
     // Theme toggle functionality
@@ -197,6 +195,11 @@
     function themeToggleClickHandler() {
         const isCurrentlyDark = document.documentElement.classList.contains('dark');
         applyTheme(!isCurrentlyDark); // Toggle to the opposite theme
+        
+        // If toggling from mobile menu, close the menu
+        if (window.innerWidth < 768) {
+            closeMobileMenu();
+        }
     }
 
     if (themeToggleBtnDesktop) {
@@ -205,4 +208,19 @@
     if (themeToggleBtnMobile) {
         themeToggleBtnMobile.addEventListener('click', themeToggleClickHandler);
     }
+    
+    // Add click event listener to the mobile menu background
+    mobileMenu.addEventListener('click', function(event) {
+        // Only close if clicking directly on the background (not on menu content)
+        if (event.target === mobileMenu) {
+            closeMobileMenu();
+        }
+    });
+    
+    // Handle escape key to close the menu
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            closeMobileMenu();
+        }
+    });
 </script> 
