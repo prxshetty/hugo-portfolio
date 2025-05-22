@@ -15,7 +15,7 @@
                     </svg>
                 </h3>
             </a>
-            <p class="text-text-secondary-light dark:text-text-secondary-dark mb-4">{{ .summary }}</p>
+            <p class="text-text-secondary-light dark:text-text-secondary-dark mb-4 prose">{{ .summary }}</p>
             <div class="flex flex-wrap gap-2">
                 {{ range .tags }}
                 {{ if ne . "" }}
@@ -27,4 +27,14 @@
         {{ end }}
     </div>
 </div>
+
+<style>
+    .prose {
+        color: #4b5563; 
+    }
+    html.dark .prose {
+        color: #9ca3af; 
+    }
+</style>
+
 {{ end }} 

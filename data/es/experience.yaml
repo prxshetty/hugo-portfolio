@@ -1,4 +1,15 @@
 experience:
+  - company: "GoodFin"
+    role: "Pasante de Ingeniero de IA"
+    period: "Ene 2024 - Actualidad"
+    country: "Estados Unidos"
+    logo: "/images/company/goodfin.png"
+    description: "Investigación sobre el rendimiento y la aplicabilidad de LLMs en el asesoramiento de inversiones y gestión de patrimonios."
+    responsibilities:
+      - "Desarrollé un agente de IA novedoso utilizando Graph RAG para abordar tareas financieras complejas de nivel CFA, mejorando significativamente el razonamiento analítico, la síntesis de información y las capacidades de apoyo a la toma de decisiones."
+      - "Lideré la evaluación comparativa integral de más de 20 LLMs para el análisis financiero utilizando métricas avanzadas e ingeniería de prompts; co-redacté investigaciones que derivaron conocimientos estratégicos para la adopción de IA en finanzas."
+      - "Gestioné flujos de trabajo completos de datos de investigación, desde el procesamiento y limpieza de extensos conjuntos de datos JSON de benchmarks de LLMs hasta la creación de visualizaciones e informes perspicaces."
+
   - company: "Marva.ai"
     role: "Becario Ingeniero ML"
     period: "Junio 2023 - Agosto 2023"
