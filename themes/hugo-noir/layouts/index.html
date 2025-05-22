@@ -44,7 +44,7 @@
         <div class="tech-carousel">
             <!-- Row 1 - Forward animation -->
             <div class="carousel-container">
-                <div class="carousel-track">
+                <div class="carousel-track carousel-track-left-to-right">
                     <!-- Original set -->
                     <div class="carousel-item">
                         <i class="devicon-python-plain text-2xl"></i>
@@ -356,7 +356,8 @@
                 {{ end }}
                 <h3 class="text-gray-400 text-xl">{{ .company }}</h3>
                 <p class="text-2xl font-semibold">{{ .role }}</p>
-                <p class="text-gray-400 text-sm">{{ .period }}</p>
+                <p class="text-gray-400 font-semibold">{{ .period }}</p>
+                <p class="text-gray-400 text-sm">{{ if .country }} {{ .country }}{{ end }}</p>
                 <p class="mt-2">{{ .description }}</p>
             </div>
             {{ end }}
@@ -454,6 +455,10 @@
     animation: scroll 45s linear infinite;
 }
 
+.carousel-track-left-to-right {
+    animation: scroll-left-to-right 60s linear infinite;
+}
+
 .carousel-track-reverse {
     animation: scroll-reverse 45s linear infinite;
 }
@@ -479,7 +484,8 @@
 }
 
 .carousel-container:hover .carousel-track,
-.carousel-container:hover .carousel-track-reverse {
+.carousel-container:hover .carousel-track-reverse,
+.carousel-container:hover .carousel-track-left-to-right {
     animation-play-state: paused;
 }
 
@@ -489,6 +495,15 @@
     }
     100% {
         transform: translateX(calc(-100% / 2));
+    }
+}
+
+@keyframes scroll-left-to-right {
+    0% {
+        transform: translateX(calc(-100% / 2));
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 

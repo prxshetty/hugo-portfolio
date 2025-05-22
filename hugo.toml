@@ -66,6 +66,7 @@ url = "https://catalog-education.oracle.com/ords/certview/sharebadge?id=FDAC04F9
 company = "Marva.ai"
 role = "ML Engineer Intern"
 period = "June 2023 - Aug 2023"
+country = "India"
 logo = "/images/company/marva.png"
 description = "Developed deep learning models for financial stock prediction and real-time data visualization."
 responsibilities = [
@@ -76,9 +77,10 @@ responsibilities = [
 ]
 
 [[params.experience]]
-company = "Knowledge Solutions India"
+company = "Knowledge Solutions"
 role = "ML Research Intern"
 period = "Sept 2021 - Nov 2021"
+country = "India"
 logo = "/images/company/ksi.png"
 description = "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
 responsibilities = [
@@ -89,9 +91,10 @@ responsibilities = [
 ]
 
 [[params.experience]]
-company = "Laugh Out Loud Ventures Pvt Ltd"
+company = "Laugh Out Loud Ventures"
 role = "SEO Analytics Intern"
 period = "Feb 2020 - March 2020"
+country = "India"
 logo = "/images/company/lol.png"
 description = "Managed digital advertising strategies to optimize conversions for educational courses."
 responsibilities = [
