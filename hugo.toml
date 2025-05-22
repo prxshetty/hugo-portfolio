@@ -9,7 +9,7 @@ canonifyURLs = true
 
 # Multilingual configuration
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
@@ -20,23 +20,23 @@ defaultContentLanguageInSubdir = false
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "About"
-        url = "/about/"
+        pageRef = "/about"
         weight = 1
       [[languages.en.menu.main]]
         name = "Experience"
-        url = "/experience/"
+        pageRef = "/experience"
         weight = 2
       [[languages.en.menu.main]]
         name = "Projects"
-        url = "/projects/"
+        pageRef = "/projects"
         weight = 3
       [[languages.en.menu.main]]
         name = "Blogs"
-        url = "/blogs/"
+        pageRef = "/blogs"
         weight = 4
       [[languages.en.menu.main]]
         name = "Contact"
-        url = "/contact/"
+        pageRef = "/contact"
         weight = 5
   [languages.es]
     languageName = "Español"
@@ -46,23 +46,23 @@ defaultContentLanguageInSubdir = false
     [languages.es.menu]
       [[languages.es.menu.main]]
         name = "Sobre Mí"
-        url = "/about/"
+        pageRef = "/about"
         weight = 1
       [[languages.es.menu.main]]
         name = "Experiencia"
-        url = "/experience/"
+        pageRef = "/experience"
         weight = 2
       [[languages.es.menu.main]]
         name = "Proyectos"
-        url = "/projects/"
+        pageRef = "/projects"
         weight = 3
       [[languages.es.menu.main]]
         name = "Blogs"
-        url = "/blogs/"
+        pageRef = "/blogs"
         weight = 4
       [[languages.es.menu.main]]
         name = "Contacto"
-        url = "/contact/"
+        pageRef = "/contact"
         weight = 5
   [languages.fr]
     languageName = "Français"
@@ -72,23 +72,23 @@ defaultContentLanguageInSubdir = false
     [languages.fr.menu]
       [[languages.fr.menu.main]]
         name = "À Propos"
-        url = "/about/"
+        pageRef = "/about"
         weight = 1
       [[languages.fr.menu.main]]
         name = "Expérience"
-        url = "/experience/"
+        pageRef = "/experience"
         weight = 2
       [[languages.fr.menu.main]]
         name = "Projets"
-        url = "/projects/"
+        pageRef = "/projects"
         weight = 3
       [[languages.fr.menu.main]]
         name = "Blogs"
-        url = "/blogs/"
+        pageRef = "/blogs"
         weight = 4
       [[languages.fr.menu.main]]
         name = "Contact"
-        url = "/contact/"
+        pageRef = "/contact"
         weight = 5
 
 # Taxonomy configuration
@@ -155,22 +155,22 @@ description = "As a volunteer at Bunts Sangha Nashik, I tutored students, prepar
 [menu]
   [[menu.main]]
     name = "About"
-    url = "/about/"
+    pageRef = "/about"
     weight = 1
   [[menu.main]]
     name = "Experience"
-    url = "/experience/"
+    pageRef = "/experience"
     weight = 2
   [[menu.main]]
     name = "Projects"
-    url = "/projects/"
+    pageRef = "/projects"
     weight = 3
   [[menu.main]]
     name = "Blogs"
-    url = "/blogs/"
+    pageRef = "/blogs"
     weight = 4
   [[menu.main]]
     name = "Contact Me"
-    url = "/contact/"
+    pageRef = "/contact"
     weight = 5
 

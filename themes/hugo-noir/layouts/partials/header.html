@@ -73,12 +73,12 @@
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL | absURL }}" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink .URL }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">{{ .Name }}</a>
+                <a href="{{ .URL | absURL }}" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">{{ .Name }}</a>
                 {{ end }}
             </nav>
             <div class="hidden md:flex justify-end items-center">
                 <div class="flex items-center">
-                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">{{ T "localTimeLabel" }}</span>
                     <div id="local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
                 <!-- Language Switcher - Desktop -->
@@ -90,24 +90,18 @@
                         </svg>
                     </div>
                     <div class="language-dropdown">
-                        {{ if .IsTranslated }}
-                            {{ range .Translations }}
-                            <a href="{{ .Permalink }}" class="{{ if eq .Lang $.Language.Lang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                {{ .Language.LanguageName }}
-                            </a>
+                        {{ range .Site.Languages }}
+                            {{ $translation := "" }}
+                            {{ $foundTranslations := where $.Page.Translations "Lang" .Lang }}
+                            {{ if $foundTranslations }}
+                                {{ $translation = index $foundTranslations 0 }}
                             {{ end }}
-                        {{ else }}
-                            {{ range .Site.Languages }}
-                            {{ if ne .Lang $.Language.Lang }}
-                            <a href="{{ replaceRE "^https?://[^/]+/.*" (print "/" .Lang "/") $.Site.BaseURL }}" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+                            {{ $isCurrentLang := eq .Lang $.Language.Lang }}
+                            <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | absLangURL }}{{ end }}" 
+                               class="{{ if $isCurrentLang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                                 {{ .LanguageName }}
                             </a>
-                            {{ end }}
-                            {{ end }}
                         {{ end }}
-                        <a href="{{ replaceRE "^https?://[^/]+/.*" (print "/" $.Language.Lang "/") $.Site.BaseURL }}" class="{{ if eq $.Language.Lang $.Language.Lang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                            {{ $.Language.LanguageName }}
-                        </a>
                     </div>
                 </div>
                 <button id="theme-toggle-button-desktop" class="ml-4 inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 p-2 rounded-md">
@@ -126,7 +120,7 @@
     <div id="mobile-menu" class="fixed inset-0 bg-bg-secondary-light dark:bg-bg-secondary-dark z-50 hidden transition-all duration-300 backdrop-blur-2xl">
         <div class="flex flex-col h-full">
             <div class="flex justify-between items-center p-6">
-                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">Menu</span>
+                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">{{ T "menuTitle" }}</span>
                 <div class="flex items-center gap-4">
                     <!-- Language Switcher - Mobile -->
                     <div class="language-switcher">
@@ -137,24 +131,18 @@
                             </svg>
                         </div>
                         <div class="language-dropdown">
-                            {{ if .IsTranslated }}
-                                {{ range .Translations }}
-                                <a href="{{ .Permalink }}" class="{{ if eq .Lang $.Language.Lang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                    {{ .Language.LanguageName }}
-                                </a>
+                            {{ range .Site.Languages }}
+                                {{ $translation := "" }}
+                                {{ $foundTranslationsMobile := where $.Page.Translations "Lang" .Lang }}
+                                {{ if $foundTranslationsMobile }}
+                                    {{ $translation = index $foundTranslationsMobile 0 }}
                                 {{ end }}
-                            {{ else }}
-                                {{ range .Site.Languages }}
-                                {{ if ne .Lang $.Language.Lang }}
-                                <a href="{{ replaceRE "^https?://[^/]+/.*" (print "/" .Lang "/") $.Site.BaseURL }}" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+                                {{ $isCurrentLang := eq .Lang $.Language.Lang }}
+                                <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | absLangURL }}{{ end }}" 
+                                   class="{{ if $isCurrentLang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                                     {{ .LanguageName }}
                                 </a>
-                                {{ end }}
-                                {{ end }}
                             {{ end }}
-                            <a href="{{ replaceRE "^https?://[^/]+/.*" (print "/" $.Language.Lang "/") $.Site.BaseURL }}" class="{{ if eq $.Language.Lang $.Language.Lang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
-                                {{ $.Language.LanguageName }}
-                            </a>
                         </div>
                     </div>
                     <button id="theme-toggle-button-mobile" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 flex items-center p-2 rounded-md">
@@ -174,12 +162,12 @@
             </div>
             <nav class="flex flex-col p-6 space-y-4">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL | absURL }}" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if eq $currentPage.RelPermalink .URL }}text-accent-light dark:text-accent-dark font-semibold{{ end }}" data-menu-link>{{ .Name }}</a>
+                <a href="{{ .URL | absURL }}" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}" data-menu-link>{{ .Name }}</a>
                 {{ end }}
             </nav>
             <div class="mt-auto p-6">
                 <div class="flex items-center justify-center">
-                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">{{ T "localTimeLabel" }}</span>
                     <div id="mobile-local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
             </div>
