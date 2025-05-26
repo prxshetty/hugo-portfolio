@@ -1,4 +1,10 @@
 projects:
+  - title: "Hugo Noir"
+    description: "Un tema limpio y minimalista para Hugo enfocado en la legibilidad, simplicidad y soporte multilingüe."
+    tech: "Hugo, Tailwind CSS, JavaScript, Go"
+    image: "/images/projects/tn.png"
+    link: "https://themes.gohugo.io/themes/hugo-noir/"
+
   - title: "Sistema de Respuesta a Emergencias de Viaje"
     description: "Un sofisticado sistema multi-agente que aprovecha la arquitectura Swarm de LangGraph, LangSmith y OpenAI para coordinar asistencia de viaje de emergencia a través de agentes especializados de IA. Presenta colaboración multi-agente, monitoreo en tiempo real y arquitectura modular."
     tech: "Python, LangChain, LangSmith, LangGraph, OpenAI API"
