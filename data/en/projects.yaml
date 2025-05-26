@@ -2,7 +2,7 @@ projects:
   - title: "Hugo Noir"
     description: "A clean, minimalistic theme for Hugo with a focus on readability, simplicity, and multilingual support."
     tech: "Hugo, Tailwind CSS, JavaScript, Go"
-    image: "/images/projects/tn.png"
+    image: "/images/projects/hugo-noir.png"
     link: "https://themes.gohugo.io/themes/hugo-noir/"
     
   - title: "Emergency Travel Response System"
