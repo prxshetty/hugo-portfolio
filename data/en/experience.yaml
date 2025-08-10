@@ -8,7 +8,7 @@ experience:
     description: "Conducting research on LLM performance and applicability to investment and wealth advisory work."
     responsibilities:
       - "Developing a novel AI agent leveraging Graph RAG to tackle complex CFA-level financial tasks, significantly advancing analytical reasoning, information synthesis, and decision-support capabilities."
-      - "Leading end-to-end benchmarking of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance."
+      - "Leading end-to-end benchmarking of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance. Link : https://fin-arenagf.vercel.app"
       - "Implementing full-cycle research data workflows, from processing and cleaning extensive JSON datasets from LLM benchmarks to creating insightful visualizations and reports."
 
   - company: "Marva.ai"

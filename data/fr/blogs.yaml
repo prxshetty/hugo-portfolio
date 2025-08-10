@@ -1,4 +1,11 @@
 blogs:
+  - title: "Les LLM peuvent-ils vraiment faire de la recherche web ? (et pourquoi votre agent reste bloqué)"
+    date: "2025-08-09"
+    summary: "Malgré des capacités impressionnantes pour des tâches simples, les agents d'IA actuels échouent systématiquement dans les recherches web complexes et multi-étapes nécessitant une réflexion stratégique, la validation des sources et des méthodologies adaptatives."
+    tags: ["ReAct", "Recherche Approfondie", "LLMs Pensants", "Invites"]
+    content: "Lorsque les agents échouent, ce n’est pas au hasard. Les pannes ont tendance à se regrouper autour de quelques étapes — recherche, sélection de pages, extraction de faits à partir des pages, mise à jour de la stratégie, rapprochement ..."
+    link: "https://medium.com/@prxshetty/can-llms-really-do-web-research-and-why-your-agent-still-gets-stuck-d74598b44e45"
+
   - title: "Comment j'ai construit un Essaim d'Agents IA avec LangChain"
     date: "2025-03-18"
     summary: "Ce blog explique en détail comment j'ai construit mon projet pendant le week-end (que vous pouvez aussi faire !), un Système de Réponse d'Urgence pour Voyages."

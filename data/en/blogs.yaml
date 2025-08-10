@@ -1,4 +1,12 @@
 blogs:
+  - title: "Can LLMs really do web research? (and why your agent still gets stuck)"
+    date: "2025-08-09"
+    summary: "Despite impressive capabilities in simple tasks, current AI agents consistently fail at complex, multi-step web research that requires strategic thinking, source validation, and adaptive methodologies."
+    tags: ["ReAct", "Deep Research", "Thinking LLMs", "Promps"]
+    content: "When agents fail, they don’t fail randomly. The breakdowns tend to cluster around a few stages — searching, page selection, extracting facts from pages, updating strategy, reconciling ..."
+    link: "https://medium.com/@prxshetty/can-llms-really-do-web-research-and-why-your-agent-still-gets-stuck-d74598b44e45"
+
+
   - title: "How I built a Swarm of AI Agents with LangChain"
     date: "2025-03-18"
     summary: "This blog explains in detail how I built my project during the weekend (which you can too!), an Emergency Travel Response System."
