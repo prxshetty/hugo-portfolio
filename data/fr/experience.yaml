@@ -8,7 +8,7 @@ experience:
     description: "Recherche sur la performance et l'applicabilité des LLM pour le conseil en investissement et la gestion de patrimoine."
     responsibilities:
       - "Développé un agent IA innovant utilisant Graph RAG pour aborder des tâches financières complexes de niveau CFA, améliorant considérablement le raisonnement analytique, la synthèse d'informations et les capacités d'aide à la décision."
-      - "Dirigé l'évaluation comparative de bout en bout de plus de 20 LLM pour l'analyse financière en utilisant des métriques avancées et l'ingénierie des prompts; co-écrit des recherches dégageant des perspectives stratégiques pour l'adoption de l'IA en finance. Link : https://fin-arenagf.vercel.app"
+      - "Dirigé l'évaluation comparative de bout en bout de plus de 20 LLM pour l'analyse financière en utilisant des métriques avancées et l'ingénierie des prompts; co-écrit des recherches dégageant des perspectives stratégiques pour l'adoption de l'IA en finance. [Link](https://fin-arenagf.vercel.app)"
       - "Géré les flux de travail complets des données de recherche, du traitement et du nettoyage d'importants ensembles de données JSON issus des benchmarks de LLM à la création de visualisations et de rapports pertinents."
 
   - company: "Marva.ai"
