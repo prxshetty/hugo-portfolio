@@ -1,4 +1,11 @@
 blogs:
+  - title: "Comment les Modèles d'IA s'Entraînent sur des Données Privées Sans y Accéder : L'Apprentissage Fédéré Expliqué"
+    date: "2025-08-16"
+    summary: "L'Apprentissage Fédéré (FL) permet aux modèles d'IA de s'entraîner sur des données distribuées sans centraliser les informations sensibles. Au lieu de collecter les données en un seul endroit, FL envoie des copies du modèle à des appareils locaux où ils s'entraînent sur des données privées."
+    tags: ["Apprentissage Fédéré", "Calcul Distribué", "Apprentissage Automatique", "Blockchain"]
+    content: "Nous recevons beaucoup de données des téléphones, voitures et capteurs intelligents chaque jour. Ces données sont utiles pour entraîner des modèles d'apprentissage automatique. L'ancienne méthode consistait à envoyer toutes ces données à un serveur central pour l'entraînement."
+    link: "https://medium.com/@prxshetty/how-ai-models-train-on-private-data-without-accessing-it-federated-learning-explained-7b6f9c070f44"
+
   - title: "Les LLM peuvent-ils vraiment faire de la recherche web ? (et pourquoi votre agent reste bloqué)"
     date: "2025-08-09"
     summary: "Malgré des capacités impressionnantes pour des tâches simples, les agents d'IA actuels échouent systématiquement dans les recherches web complexes et multi-étapes nécessitant une réflexion stratégique, la validation des sources et des méthodologies adaptatives."

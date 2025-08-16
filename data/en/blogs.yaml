@@ -1,4 +1,11 @@
 blogs:
+  - title: "How AI Models Train on Private Data Without Accessing It: Federated Learning Explained"
+    date: "2025-08-16"
+    summary: "Federated Learning (FL) enables AI models to be trained on distributed data without centralizing sensitive information. Instead of collecting data in one location, FL sends model copies to local devices where they train on private data."
+    tags: ["Federated Learning", "Distributed Computing", "Machine Learning", "Block Chain"]
+    content: "We get a lot of data from phones, cars, and smart sensors every day. This data is useful for training machine learning models. The old way was to send all this data to a central server for training."
+    link: "https://medium.com/@prxshetty/how-ai-models-train-on-private-data-without-accessing-it-federated-learning-explained-7b6f9c070f44"
+
   - title: "Can LLMs really do web research? (and why your agent still gets stuck)"
     date: "2025-08-09"
     summary: "Despite impressive capabilities in simple tasks, current AI agents consistently fail at complex, multi-step web research that requires strategic thinking, source validation, and adaptive methodologies."

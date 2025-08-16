@@ -1,4 +1,11 @@
 blogs:
+  - title: "Cómo los Modelos de IA se Entrenan en Datos Privados Sin Acceder a Ellos: Aprendizaje Federado Explicado"
+    date: "2025-08-16"
+    summary: "El Aprendizaje Federado (FL) permite que los modelos de IA se entrenen en datos distribuidos sin centralizar información sensible. En lugar de recopilar datos en una ubicación, FL envía copias del modelo a dispositivos locales donde se entrenan con datos privados."
+    tags: ["Aprendizaje Federado", "Computación Distribuida", "Aprendizaje Automático", "Blockchain"]
+    content: "Recibimos muchos datos de teléfonos, automóviles y sensores inteligentes todos los días. Estos datos son útiles para entrenar modelos de aprendizaje automático. La forma antigua era enviar todos estos datos a un servidor central para el entrenamiento."
+    link: "https://medium.com/@prxshetty/how-ai-models-train-on-private-data-without-accessing-it-federated-learning-explained-7b6f9c070f44"
+
   - title: "¿Pueden realmente los LLM realizar investigaciones en la web? (y por qué tu agente todavía se atasca)"
     date: "2025-08-09"
     summary: "A pesar de sus impresionantes capacidades en tareas simples, los agentes de IA actuales fallan de manera constante en investigaciones web complejas y de varios pasos que requieren pensamiento estratégico, validación de fuentes y metodologías adaptativas."
