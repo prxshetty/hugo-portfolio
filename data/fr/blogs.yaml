@@ -1,4 +1,11 @@
 blogs:
+  - title: "Les LLM sont-ils inutilement énormes ? Compression extrême des LLMs utilisant des réseaux tensoriels inspirés de la physique quantique"
+    date: "2025-08-23"
+    summary: "Présente une nouvelle approche appelée CompactifAI par Multiverse Computing, qui utilise des réseaux tensoriels inspirés de la physique quantique pour compresser drastiquement les LLMs avec une perte minimale de précision."
+    tags: ["Réseaux tensoriels inspirés de la physique quantique", "Compression de modèles", "Apprentissage automatique"]
+    content: "Des LLMs plus grands signifient de meilleures performances. Cela a conduit à une course aux paramètres, aux données et aux capacités de calcul."
+    link: "https://medium.com/@prxshetty/are-llms-needlessly-huge-extreme-compression-of-llms-using-quantum-inspired-tensor-networks-11d8d24f8ef9"
+
   - title: "Comment les Modèles d'IA s'Entraînent sur des Données Privées Sans y Accéder : L'Apprentissage Fédéré Expliqué"
     date: "2025-08-16"
     summary: "L'Apprentissage Fédéré (FL) permet aux modèles d'IA de s'entraîner sur des données distribuées sans centraliser les informations sensibles. Au lieu de collecter les données en un seul endroit, FL envoie des copies du modèle à des appareils locaux où ils s'entraînent sur des données privées."

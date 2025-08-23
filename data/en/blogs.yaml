@@ -1,4 +1,11 @@
 blogs:
+  - title: "Are LLMs Needlessly Huge? Extreme Compression of LLMs using Quantum Inspired Tensor Networks"
+    date: "2025-08-23"
+    summary: "Presents a novel approach called CompactifAI by Multiverse Computing, which uses quantum-inspired tensor networks to drastically compress LLMs with minimal loss in accuracy. "
+    tags: ["Quantum Inspired Tensor Networks", "Model Compression", "Machine Learning"]
+    content: "Bigger LLMs mean better performance. This has led to an arms race for more parameters, more data, and more compute. "
+    link: "https://medium.com/@prxshetty/are-llms-needlessly-huge-extreme-compression-of-llms-using-quantum-inspired-tensor-networks-11d8d24f8ef9"
+
   - title: "How AI Models Train on Private Data Without Accessing It: Federated Learning Explained"
     date: "2025-08-16"
     summary: "Federated Learning (FL) enables AI models to be trained on distributed data without centralizing sensitive information. Instead of collecting data in one location, FL sends model copies to local devices where they train on private data."
