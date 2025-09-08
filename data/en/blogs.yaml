@@ -1,4 +1,11 @@
 blogs:
+  - title: "Attention Is Not All You Need. It's How You Need It."
+    date: "2025-09-07"
+    summary: "Jet-Nemotron rethinks AI by using attention only when necessary, dramatically boosting speed and accuracy compared to traditional full-attention models."
+    tags: ["Transformers", "Attention Mechanisms", "AI Architecture", "Neural Networks", "Machine Learning"]
+    content: "In 2017, the paper 'Attention Is All You Need' launched a revolution. It provided the Transformer, the architectural foundation behind almost all cutting-edge language models since its inception."
+    link: "https://medium.com/@prxshetty/attention-is-not-all-you-need-its-how-you-need-it-ecae47ce04b1"
+
   - title: "Are LLMs Needlessly Huge? Extreme Compression of LLMs using Quantum Inspired Tensor Networks"
     date: "2025-08-23"
     summary: "Presents a novel approach called CompactifAI by Multiverse Computing, which uses quantum-inspired tensor networks to drastically compress LLMs with minimal loss in accuracy. "
@@ -82,4 +89,4 @@ blogs:
     summary: "A research-backed exploration of activation functions and initialization techniques in deep learning."
     tags: ["Deep Learning", "Neural Networks", "AI Research"]
     content: "Kicking off a new research series, this article breaks down activation functions and their impact on training stability..."
-    link: "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16" 
+    link: "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16"
