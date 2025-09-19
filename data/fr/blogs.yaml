@@ -1,4 +1,11 @@
 blogs:
+  - title: "L'Attention N'Est Pas Tout Ce Dont Vous Avez Besoin. C'Est Comment Vous En Avez Besoin."
+    date: "2025-09-07"
+    summary: "Jet-Nemotron repense l'IA en utilisant l'attention seulement quand nécessaire, augmentant dramatiquement la vitesse et la précision par rapport aux modèles traditionnels à attention complète."
+    tags: ["Transformers", "Mécanismes d'Attention", "Architecture IA", "Réseaux de Neurones", "Apprentissage Automatique"]
+    content: "En 2017, l'article 'Attention Is All You Need' a lancé une révolution. Il a fourni le Transformer, la base architecturale derrière presque tous les modèles de langage de pointe depuis sa création."
+    link: "https://medium.com/@prxshetty/attention-is-not-all-you-need-its-how-you-need-it-ecae47ce04b1"
+
   - title: "Les LLM sont-ils inutilement énormes ? Compression extrême des LLMs utilisant des réseaux tensoriels inspirés de la physique quantique"
     date: "2025-08-23"
     summary: "Présente une nouvelle approche appelée CompactifAI par Multiverse Computing, qui utilise des réseaux tensoriels inspirés de la physique quantique pour compresser drastiquement les LLMs avec une perte minimale de précision."
@@ -81,4 +88,4 @@ blogs:
     summary: "Une exploration étayée par la recherche des fonctions d'activation et des techniques d'initialisation en apprentissage profond."
     tags: ["Apprentissage Profond", "Réseaux de Neurones", "Recherche en IA"]
     content: "Lançant une nouvelle série de recherche, cet article décompose les fonctions d'activation et leur impact sur la stabilité de l'entraînement..."
-    link: "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16" 
+    link: "https://medium.com/@prxshetty/paper-analysis-01-a-survey-on-activation-functions-and-their-relation-with-xavier-and-he-normal-01a64dff5c16"
