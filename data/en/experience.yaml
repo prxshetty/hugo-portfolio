@@ -8,8 +8,8 @@ experience:
     description: "Conducting research on LLM performance and applicability to investment and wealth advisory work."
     responsibilities:
       - "Developing a novel AI agent leveraging Graph RAG to tackle complex CFA-level financial tasks, significantly advancing analytical reasoning, information synthesis, and decision-support capabilities."
-      - "Leading end-to-end benchmarking of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance. [Link](https://www.cfabenchmark.com)"
-      - "Implementing full-cycle research data workflows, from processing and cleaning extensive JSON datasets from LLM benchmarks to creating insightful visualizations and reports."
+      - "Built end-to-end <a href='https://www.cfabenchmark.com' target='_blank' class='text-accent-light dark:text-accent-dark hover:underline'>Benchmark</a> of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance."
+      - "Implemented full-cycle research data workflows, from processing and cleaning extensive JSON datasets from LLM benchmarks to creating insightful visualizations and reports."
 
   - company: "Marva.ai"
     company_link: "https://ai.marva.in/"
@@ -54,4 +54,4 @@ experience:
     role: "Open Source Contributor"
     period: "Jun 2024 - Now"
     description: "I actively try to contribute to Open Source on my GitHub"
-    github_username: "prxshetty" 
+    github_username: "prxshetty"
