@@ -38,6 +38,10 @@ defaultContentLanguageInSubdir = true
         name = "Contact"
         pageRef = "/contact"
         weight = 5
+      [[languages.en.menu.main]]
+        name = "Research"
+        pageRef = "/research"
+        weight = 6
   [languages.es]
     languageName = "Español"
     title = "Pranam Shetty"
@@ -64,6 +68,10 @@ defaultContentLanguageInSubdir = true
         name = "Contacto"
         pageRef = "/contact"
         weight = 5
+      [[languages.es.menu.main]]
+        name = "Investigación"
+        pageRef = "/research"
+        weight = 6
   [languages.fr]
     languageName = "Français"
     title = "Pranam Shetty"
@@ -90,6 +98,10 @@ defaultContentLanguageInSubdir = true
         name = "Contact"
         pageRef = "/contact"
         weight = 5
+      [[languages.fr.menu.main]]
+        name = "Recherche"
+        pageRef = "/research"
+        weight = 6
 
 # Taxonomy configuration
 [taxonomies]

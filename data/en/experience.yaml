@@ -1,6 +1,7 @@
 experience:
   - company: "GoodFin"
     company_link: "https://www.goodfin.com"
+    video_link: "https://docs.google.com/videos/d/1XjCH6u83y2T5TTk1jFUpYzw09iQaZXw30bZGlthPDls/edit?usp=sharing"
     role: "AI Engineer Intern"
     period: "May 2025 - Aug 2025"
     country: "United States"
@@ -8,8 +9,9 @@ experience:
     description: "Conducting research on LLM performance and applicability to investment and wealth advisory work."
     responsibilities:
       - "Developing a novel AI agent leveraging Graph RAG to tackle complex CFA-level financial tasks, significantly advancing analytical reasoning, information synthesis, and decision-support capabilities."
-      - "Built end-to-end <a href='https://www.cfabenchmark.com' target='_blank' class='text-accent-light dark:text-accent-dark hover:underline'>Benchmark</a> of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance."
+      - "Built end-to-end Benchmark of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance."
       - "Implemented full-cycle research data workflows, from processing and cleaning extensive JSON datasets from LLM benchmarks to creating insightful visualizations and reports."
+    benchmark_link: "https://www.cfabenchmark.com"
 
   - company: "Marva.ai"
     company_link: "https://ai.marva.in/"
