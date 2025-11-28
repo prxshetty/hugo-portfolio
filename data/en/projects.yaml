@@ -1,4 +1,11 @@
 projects:
+  - title: "CodeClimax"
+    description: "A Chrome extension that celebrates your problem-solving successes with custom media. When you solve a LeetCode problem, the extension detects your success and displays a celebration overlay with your chosen media."
+    tech: "JavaScript, CSS, HTML"
+    image: "/images/projects/codeclimax.png"
+    link: "https://github.com/prxshetty/CodeClimax"
+    youtube: "https://www.youtube.com/watch?v=2Tdhp8Ezmeo&feature=youtu.be"
+
   - title: "Hugo Noir"
     description: "A clean, minimalistic theme for Hugo with a focus on readability, simplicity, and multilingual support."
     tech: "Hugo, Tailwind CSS, JavaScript, Go"
@@ -16,6 +23,7 @@ projects:
     tech: "Python, Chainlit, Speechmatics Flow, LangChain, SQLite, Grok API, AlphaVantage API, DALL-E"
     image: "/images/projects/lumi.png"
     link: "https://devpost.com/software/lumi-personal-ai-assistant"
+    youtube: "https://www.youtube.com/watch?v=X18DxQ_3ju8&feature=youtu.be"
 
   - title: "JobTrail - Web Development"
     description: "Job Trail is a Chrome extension that automatically categorizes Gmail emails related to job applications based on their content."
