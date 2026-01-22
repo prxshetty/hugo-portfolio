@@ -6,7 +6,7 @@ experience:
     period: "Mai 2024 - Août 2025"
     country: "États-Unis"
     logo: "/images/company/goodfin.png"
-    description: "Recherche sur la performance et l'applicabilité des LLM pour le conseil en investissement et la gestion de patrimoine."
+    description: "Conçu et mis en œuvre un pipeline d'évaluation comparative de LLM de bout en bout et une plateforme publique (présentée par FT et CNBC) pour évaluer la performance des modèles sur les tâches du CFA Niveau III en utilisant des cadres rigoureux et des stratégies de prompting avancées."
     responsibilities:
       - "Développé un agent IA innovant utilisant Graph RAG pour aborder des tâches financières complexes de niveau CFA, améliorant considérablement le raisonnement analytique, la synthèse d'informations et les capacités d'aide à la décision."
       - "Développé de bout en bout un Benchmark de plus de 20 LLM pour l'analyse financière, utilisant des métriques avancées et l'ingénierie des invites ; co-auteur d'une recherche fournissant des informations stratégiques pour l'adoption de l'IA dans la finance."
@@ -19,7 +19,7 @@ experience:
     period: "Juin 2023 - Août 2023"
     country: "Inde"
     logo: "/images/company/marva.png"
-    description: "Développé des modèles d'apprentissage profond pour la prédiction des actions financières et la visualisation de données en temps réel."
+    description: "Développé un moteur de signaux de trading en temps réel et un pipeline de fonctionnalités multimodal (Ichimoku + FinBERT) sur Kubernetes, améliorant le débit de 70% et la précision des prédictions de 15% dans des conditions de marché volatiles."
     responsibilities:
       - "Développé des modèles de prédiction d'actions financières intégrant des techniques avancées d'apprentissage profond"
       - "Amélioré la précision des signaux d'achat/vente avec des stratégies hybrides d'Ichimoku Cloud et des modèles LSTM affinés"
@@ -32,7 +32,7 @@ experience:
     period: "Sept 2021 - Nov 2021"
     country: "Inde"
     logo: "/images/company/ksi.png"
-    description: "Construit et optimisé des pipelines ML pour la prédiction des coûts de réclamations d'assurance et le traitement de big data."
+    description: "Réarchitecturé un pipeline Spark ML distribué réduisant le temps d'exécution de 75% et modernisé l'évaluation des risques pour plus de 500K réclamations quotidiennes, permettant un scoring en quasi temps réel via Docker et Kubernetes."
     responsibilities:
       - "Conçu et déployé un pipeline ML évolutif pour la prédiction des coûts de réclamations d'assurance"
       - "Optimisé le traitement de big data avec PySpark et Dask, réduisant le temps de calcul de 50%"
@@ -45,7 +45,7 @@ experience:
     period: "Fév 2020 - Mars 2020"
     country: "Inde"
     logo: "/images/company/lol.png"
-    description: "Géré des stratégies de publicité numérique pour optimiser les conversions pour des cours éducatifs."
+    description: "Dirigé la transition vers la publicité numérique pendant la pandémie, optimisant les stratégies publicitaires Google/Facebook et utilisant l'analytique pour augmenter les conversions des cours éducatifs."
     responsibilities:
       - "Dirigé une équipe de vente dans la transition vers la publicité numérique pendant la pandémie"
       - "Optimisé les stratégies Google Ads et Facebook Ads pour générer des conversions plus élevées pour les cours éducatifs"

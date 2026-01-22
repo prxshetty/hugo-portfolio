@@ -6,7 +6,7 @@ experience:
     period: "May 2025 - Aug 2025"
     country: "United States"
     logo: "/images/company/goodfin.png"
-    description: "Conducting research on LLM performance and applicability to investment and wealth advisory work."
+    description: "Designed and implemented an end-to-end LLM benchmarking pipeline (featured by FT & CNBC) to evaluate model performance on financial tasks using rigorous frameworks and advanced prompting strategies."
     responsibilities:
       - "Led the design and implementation of an end-to-end LLM benchmarking pipeline evaluating 20+ models (OpenAI, Claude, Gemini) on CFA Level III tasks."
       - "Developed a public, full-stack benchmarking platform (APIs, database, UI) that was featured by the Financial Times and CNBC."
@@ -20,7 +20,7 @@ experience:
     period: "June 2023 - Aug 2023"
     country: "India"
     logo: "/images/company/marva.png"
-    description: "Developed deep learning models for financial stock prediction and real-time data visualization."
+    description: "Built a real-time trading signal engine and multimodal feature pipeline (Ichimoku + FinBERT) on Kubernetes, improving throughput by 70% and prediction accuracy by 15% under volatile market conditions."
     responsibilities:
       - "Built and deployed a real-time trading signal engine using a custom Java LSTM on Kubernetes, improving throughput by 70% under volatile market conditions."
       - "Developed a multimodal feature pipeline combining Ichimoku Cloud indicators with FinBERT/GPT-2 sentiment signals, improving prediction accuracy by 15%."
@@ -33,7 +33,7 @@ experience:
     period: "Sept 2021 - Nov 2021"
     country: "India"
     logo: "/images/company/ksi.png"
-    description: "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
+    description: "Re-architected a distributed Spark ML pipeline reducing runtime by 75% and modernized risk assessment for 500K+ daily claims, enabling near-real-time scoring via Docker and Kubernetes."
     responsibilities:
       - "Re-architected a distributed Spark ML pipeline, cutting end-to-end runtime by 75% (8+ hours to under 2 hours)."
       - "Improved claim-level risk assessment accuracy by 18% across 500K+ daily claims using ALS and frequent pattern mining."
@@ -46,7 +46,7 @@ experience:
     period: "Feb 2020 - March 2020"
     country: "India"
     logo: "/images/company/lol.png"
-    description: "Managed digital advertising strategies to optimize conversions for educational courses."
+    description: "Led the transition to digital advertising during the pandemic, optimizing Google/Facebook ad strategies and using analytics to drive higher conversions for educational courses."
     responsibilities:
       - "Led a sales team in transitioning to digital advertising during the pandemic"
       - "Optimized Google Ads and Facebook Ads strategies to drive higher conversions for educational courses"
