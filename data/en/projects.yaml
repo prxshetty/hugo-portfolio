@@ -1,4 +1,12 @@
 projects:
+
+  - title: "Grok Interviews"
+    description: "A comprehensive, enterprise-grade interview preparation platform featuring 3.6+ million curated resources and 81,499 technical questions across 5 major domains."
+    tech: "Nextjs, Tailwind, OpenAI, Cloudflare, GPU"
+    image: "/images/projects/grokvoice.png"
+    youtube: "https://youtu.be/bCTKYImpETI"
+    website: "https://www.grokinterviews.org"
+
   - title: "CodeClimax"
     description: "A Chrome extension that celebrates your problem-solving successes with custom media. When you solve a LeetCode problem, the extension detects your success and displays a celebration overlay with your chosen media."
     tech: "JavaScript, CSS, HTML"

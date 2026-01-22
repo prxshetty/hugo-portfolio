@@ -2,4 +2,8 @@ research:
   - title: "Raisonnement Financier Avancé à l'Échelle : Une Évaluation Complète des Grands Modèles de Langage au Niveau III du CFA"
     authors: "Pranam Shetty, Abhisek Upadhayaya, Parth Mitesh Shah, Srikanth Jagabathula, Shilpi Nayak, Anna Joo Fee"
     link: "https://arxiv.org/abs/2507.02954"
-    abstract: "Le résumé indique que les institutions financières adoptent de plus en plus les grands modèles linguistiques (LLM), ce qui rend cruciale une évaluation rigoureuse et spécifique au domaine. Cet article présente une analyse comparative complète évaluant 23 LLM de pointe sur l'examen de niveau III du Chartered Financial Analyst (CFA), qui est la référence en matière de raisonnement financier avancé. L'évaluation révèle que les modèles de premier plan démontrent de solides capacités, avec des scores composites tels que 79,1 % (o4-mini) et 77,3 % (Gemini 2.5 Flash) au CFA de niveau III. Ces résultats indiquent des progrès significatifs dans les capacités des LLM pour les applications financières à enjeux élevés et fournissent des orientations cruciales aux praticiens sur la sélection des modèles, tout en soulignant les défis restants en matière de déploiement rentable et la nécessité d'une interprétation nuancée des performances par rapport aux références professionnelles."
+    workshop_link: "https://finllm.github.io/workshop/#/fcb2025"
+    presentation_link: "https://docs.google.com/videos/d/1XjCH6u83y2T5TTk1jFUpYzw09iQaZXw30bZGlthPDls/edit?scene=id.p#scene=id.p"
+    accomplishments:
+      - "A remporté le prix de la meilleure présentation orale à FimLLM2025"
+      - "Recherche citée par CNBC, The Wall Street Journal, Barron’s, CNBC et The Financial Times."

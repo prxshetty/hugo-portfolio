@@ -1,4 +1,11 @@
 projects:
+  - title: "Grok Interviews"
+    description: "Une plateforme de préparation aux entretiens de qualité professionnelle comprenant plus de 3,6 millions de ressources organisées et 81 499 questions techniques dans 5 domaines majeurs."
+    tech: "Nextjs, Tailwind, OpenAI, Cloudflare, GPU"
+    image: "/images/projects/grokvoice.png"
+    youtube: "https://youtu.be/bCTKYImpETI"
+    website: "https://www.grokinterviews.org"
+
   - title: "Hugo Noir"
     description: "Un thème propre et minimaliste pour Hugo axé sur la lisibilité, la simplicité et le support multilingue."
     tech: "Hugo, Tailwind CSS, JavaScript, Go"

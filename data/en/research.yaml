@@ -2,4 +2,8 @@ research:
   - title: "Advanced Financial Reasoning at Scale: A Comprehensive Evaluation of Large Language Models on CFA Level III"
     authors: "Pranam Shetty, Abhisek Upadhayaya, Parth Mitesh Shah, Srikanth Jagabathula, Shilpi Nayak, Anna Joo Fee"
     link: "https://arxiv.org/abs/2507.02954"
-    abstract: "The abstract states that financial institutions are increasingly adopting Large Language Models (LLMs), making rigorous domain-specific evaluation critical. This paper presents a comprehensive benchmark evaluating 23 state-of-the-art LLMs on the Chartered Financial Analyst (CFA) Level III exam, which is the gold standard for advanced financial reasoning. The evaluation reveals that leading models demonstrate strong capabilities, with composite scores such as 79.1% (o4-mini) and 77.3% (Gemini 2.5 Flash) on CFA Level III. These results indicate significant progress in LLM capabilities for high-stakes financial applications and provide crucial guidance for practitioners on model selection, while also highlighting remaining challenges in cost-effective deployment and the need for nuanced interpretation of performance against professional benchmarks."
+    workshop_link: "https://finllm.github.io/workshop/#/fcb2025"
+    presentation_link: "https://docs.google.com/videos/d/1XjCH6u83y2T5TTk1jFUpYzw09iQaZXw30bZGlthPDls/edit?scene=id.p#scene=id.p"
+    accomplishments:
+      - "Won best oral presentation award at FimLLM2025"
+      - "Research cited by CNBC, The Wall Street Journal, Barron’s, CNBC, and The Financial Times."

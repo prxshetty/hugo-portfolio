@@ -8,9 +8,10 @@ experience:
     logo: "/images/company/goodfin.png"
     description: "Conducting research on LLM performance and applicability to investment and wealth advisory work."
     responsibilities:
-      - "Developing a novel AI agent leveraging Graph RAG to tackle complex CFA-level financial tasks, significantly advancing analytical reasoning, information synthesis, and decision-support capabilities."
-      - "Built end-to-end Benchmark of 20+ LLMs for financial analysis using advanced metrics and prompt engineering; co-authored research deriving strategic insights for AI adoption in finance."
-      - "Implemented full-cycle research data workflows, from processing and cleaning extensive JSON datasets from LLM benchmarks to creating insightful visualizations and reports."
+      - "Led the design and implementation of an end-to-end LLM benchmarking pipeline evaluating 20+ models (OpenAI, Claude, Gemini) on CFA Level III tasks."
+      - "Developed a public, full-stack benchmarking platform (APIs, database, UI) that was featured by the Financial Times and CNBC."
+      - "Defined a rigorous evaluation framework with <2% scoring variance, measuring accuracy, reasoning quality, and token-efficiency/cost."
+      - "Evaluated advanced prompting strategies (zero-shot, CoT with self-consistency, self-discovery) to improve output stability and comparability across models."
     benchmark_link: "https://www.cfabenchmark.com"
 
   - company: "Marva.ai"
@@ -21,10 +22,10 @@ experience:
     logo: "/images/company/marva.png"
     description: "Developed deep learning models for financial stock prediction and real-time data visualization."
     responsibilities:
-      - "Developed financial stock prediction models integrating advanced deep learning techniques"
-      - "Enhanced buy/sell signal accuracy with hybrid Ichimoku Cloud strategies and refined LSTM models"
-      - "Leveraged FinBERT and LLM-powered sentiment analysis, boosting stock prediction precision by 20%"
-      - "Engineered real-time data visualizations using Plotly, Dash, and Streamlit for optimized insights"
+      - "Built and deployed a real-time trading signal engine using a custom Java LSTM on Kubernetes, improving throughput by 70% under volatile market conditions."
+      - "Developed a multimodal feature pipeline combining Ichimoku Cloud indicators with FinBERT/GPT-2 sentiment signals, improving prediction accuracy by 15%."
+      - "Improved model performance by replacing ARIMA with LSTM, reducing RMSE from 614.0 to 207.34 and increasing precision by 25%."
+      - "Validated model robustness using ablation studies, rolling-window cross-validation, and early stopping to ensure stability during high volatility."
 
   - company: "Knowledge Solutions"
     company_link: ""
@@ -34,10 +35,10 @@ experience:
     logo: "/images/company/ksi.png"
     description: "Built and optimized ML pipelines for insurance claim cost prediction and big data processing."
     responsibilities:
-      - "Designed and deployed a scalable ML pipeline for insurance claim cost prediction"
-      - "Optimized big data processing with PySpark and Dask, reducing computation time by 50%"
-      - "Integrated AutoML for hyperparameter tuning, enhancing model performance"
-      - "Developed interactive dashboards using Power BI and Streamlit for real-time insights"
+      - "Re-architected a distributed Spark ML pipeline, cutting end-to-end runtime by 75% (8+ hours to under 2 hours)."
+      - "Improved claim-level risk assessment accuracy by 18% across 500K+ daily claims using ALS and frequent pattern mining."
+      - "Enabled near-real-time scoring by modernizing feature refresh with Spark Structured Streaming and containerized deployment (Docker, Kubernetes)."
+      - "Optimized Spark execution by replacing Python UDFs with native functions, using broadcast joins, and applying Adaptive Query Execution to mitigate data skew."
 
   - company: "Laugh Out Loud Ventures"
     company_link: ""
