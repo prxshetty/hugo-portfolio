@@ -3,6 +3,6 @@ title: "About Me"
 draft: false
 layout: "about"
 ---
-I’m into creating, learning, and not settling for boring. If you’re curious, hit me up on any of my socials.
+I’m passionate about building innovative tech and always learning new things. If my work interests you, please reach out via my social links.
 
-I'm available for internships and full-time opportunities. If you're looking for someone passionate, knows what he is doing and ready to contribute, thats me!
+I'm available for full-time opportunities and internships. If you're looking for someone to work on something innovative, thats me!
