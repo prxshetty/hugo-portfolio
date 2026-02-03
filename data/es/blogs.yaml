@@ -1,4 +1,10 @@
 blogs:
+  - title: "Planificación Orientada a Agentes: Cómo Hacer que la IA Multi-Agente Funcione Realmente"
+    date: "2026-02-03"
+    summary: "Los sistemas de IA multi-agente prometen resolver problemas complejos del mundo real, pero solo si el equipo de agentes especializados está coordinado adecuadamente…"
+    tags: ["Sistemas Multi-Agente", "IA Agéntica", "Agentes de IA", "Planificación", "Inteligencia Artificial"]
+    content: "Los sistemas de IA multi-agente prometen resolver problemas complejos del mundo real, pero solo si el equipo de agentes especializados está coordinado adecuadamente…"
+    link: "https://medium.com/@prxshetty/agent-oriented-planning-how-to-make-multi-agent-ai-actually-work-24324a217b51"
   - title: "La Atención No Es Todo Lo Que Necesitas. Es Cómo La Necesitas."
     date: "2025-09-07"
     summary: "Jet-Nemotron repiensa la IA usando atención solo cuando es necesario, aumentando dramáticamente la velocidad y precisión comparado con modelos tradicionales de atención completa."

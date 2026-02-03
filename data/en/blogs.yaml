@@ -1,4 +1,10 @@
 blogs:
+  - title: "Agent-Oriented Planning: How to Make Multi-Agent AI Actually Work"
+    date: "2026-02-03"
+    summary: "Multi-agent AI systems promise to solve complex, real-world problems — but only if the team of specialized agents is properly coordinated…"
+    tags: ["Multi-Agent Systems", "Agentic AI", "AI Agents", "Planning", "Artificial Intelligence"]
+    content: "Multi-agent AI systems promise to solve complex, real-world problems — but only if the team of specialized agents is properly coordinated…"
+    link: "https://medium.com/@prxshetty/agent-oriented-planning-how-to-make-multi-agent-ai-actually-work-24324a217b51"
   - title: "Attention Is Not All You Need. It's How You Need It."
     date: "2025-09-07"
     summary: "Jet-Nemotron rethinks AI by using attention only when necessary, dramatically boosting speed and accuracy compared to traditional full-attention models."
