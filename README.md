@@ -46,7 +46,10 @@ A modern, minimalist portfolio website built with Hugo, featuring a dark theme a
 3. **Customization**
    - Edit `config.toml` for basic site configuration
    - Modify content in the `content/` directory
-   - Customize theme in `themes/prxshetty-minimalistic/`
+   - **Theme Customization**:
+     - ⚠️ **Do NOT** edit files in `themes/hugo-noir/` directly. This is a Git submodule shared across other projects.
+     - To customize layout or styling, **override** the file by copying it from `themes/hugo-noir/` to your local project structure (e.g., `layouts/`, `static/`) and editing it there.
+     - Hugo prioritizes files in the project root over the theme directory.
 
 ## Configuration
 
