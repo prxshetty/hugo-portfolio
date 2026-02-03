@@ -8,7 +8,7 @@
                 class="text-text-secondary-light dark:text-text-secondary-dark text-3xl prose prose-invert prose-l max-w-none">
                 {{ .Content }}
             </div>
-          </div>
+        </div>
     </div>
     <div class="space-y-8">
         {{ $experienceData := index site.Data .Language.Lang "experience" }}
@@ -222,7 +222,7 @@
         position: relative;
     }
 
-  
+
     .stat-box {
         @apply bg-bg-primary-light dark:bg-bg-tertiary-dark p-4 rounded-lg border border-border-primary-light dark:border-border-primary-dark flex-1 min-w-[120px] text-center transition-all duration-300;
     }

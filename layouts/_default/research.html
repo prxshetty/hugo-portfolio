@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="max-w-4xl mx-auto px-4 py-12">
+<div class="max-w-4xl mx-auto px-4 pt-12 pb-24">
     <h1 class="text-5xl font-bold mb-8 text-text-primary-light dark:text-text-primary-dark">{{ .Title }}</h1>
 
     <div class="space-y-8">
@@ -7,7 +7,7 @@
         {{ with $researchData.research }}
         {{ range . }}
         <div
-            class="bg-bg-primary-light dark:bg-bg-secondary-dark p-8 rounded-lg border border-border-primary-light dark:border-border-primary-dark shadow-sm hover:shadow-md hover:border-accent-light dark:hover:border-accent-dark transition-all duration-300">
+            class="bg-bg-primary-light dark:bg-bg-secondary-dark p-8 rounded-lg border border-border-primary-light dark:border-border-primary-dark hover:border-accent-light dark:hover:border-accent-dark transition-all duration-300">
             <div class="space-y-4">
                 <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
                     class="group inline-flex items-center gap-2 text-xl font-medium text-text-secondary-light dark:text-text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-200">
@@ -30,9 +30,9 @@
                 </ul>
                 {{ end }}
 
-                <div class="flex flex-wrap gap-4 mt-6">
+                <div class="flex flex-wrap gap-2 mt-6">
                     <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
-                        class="!bg-white dark:!bg-zinc-800/90 backdrop-blur-sm hover:bg-neutral-50 dark:hover:bg-neutral-700 text-black dark:text-white border border-neutral-200 dark:border-neutral-700 text-sm md:text-base font-medium py-2 px-4 rounded-md inline-flex items-center transition-all duration-300 shadow-sm hover:shadow-md">
+                        class="px-2 py-1 text-xs bg-bg-primary-light dark:bg-bg-tertiary-dark text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark rounded-md transition-all duration-300 inline-flex items-center hover:text-text-primary-light dark:hover:text-text-primary-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="mr-2">
@@ -47,7 +47,7 @@
 
                     {{ if .workshop_link }}
                     <a href="{{ .workshop_link }}" target="_blank" rel="noopener noreferrer"
-                        class="!bg-white dark:!bg-zinc-800/90 backdrop-blur-sm hover:bg-neutral-50 dark:hover:bg-neutral-700 text-black dark:text-white border border-neutral-200 dark:border-neutral-700 text-sm md:text-base font-medium py-2 px-4 rounded-md inline-flex items-center transition-all duration-300 shadow-sm hover:shadow-md">
+                        class="px-2 py-1 text-xs bg-bg-primary-light dark:bg-bg-tertiary-dark text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark rounded-md transition-all duration-300 inline-flex items-center hover:text-text-primary-light dark:hover:text-text-primary-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="mr-2">
